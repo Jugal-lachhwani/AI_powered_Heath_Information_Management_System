@@ -1,0 +1,31 @@
+{
+  "evaluation": {
+    "accuracy": {
+      "score": 7.5,
+      "assessment": "Mostly accurate with several minor distortions and structural misplacements.",
+      "details": "The core symptoms, fever course, vitals, diagnosis, investigations, emergency advice, and follow-up timing are captured well. However, the observation adds unsupported qualifiers such as \"marked\" fatigue, \"scant\" mucus, and fever relief \"for a few hours.\" It also labels the diagnosis provisional and shifts prescribed gargles/steam inhalation into advice rather than prescription. Levocetirizine is incorrectly rendered as \"Levosteirizine,\" which is a clinically meaningful medication-name error."
+    },
+    "missing_information": {
+      "score": 7.5,
+      "assessment": "Some clinically relevant ground-truth details are omitted or incompletely represented.",
+      "details": "Past history omits the explicit denial of diabetes. Clinical examination omits that the patient was speaking comfortably in full sentences and had no severe weakness. Prescription items for warm saline gargles and steam inhalation are absent from the prescription section, though included under advice. Follow-up omits the instruction to keep temperature and oxygen-saturation records twice daily from its designated section, though this is included under advice. The follow-up date_text also omits \"or earlier if symptoms worsen.\""
+    },
+    "hallucination": {
+      "score": 6.5,
+      "assessment": "Contains several unsupported additions, including a medication error and undocumented administration routes.",
+      "details": "\"Levosteirizine\" is not the ground-truth medication Levocetirizine and appears to be an invented/misspelled drug name. The oral route for paracetamol, amlodipine, and the antihistamine is added despite the ground truth explicitly stating that medication route was not documented. \"Teleconsultation home-measured vitals,\" \"current skin rash,\" and the added duration of fever reduction \"for a few hours\" are unsupported. The upper respiratory infection wording in the examination is not counted as hallucinated because the diagnosis exists elsewhere in the ground truth."
+    },
+    "clinical_language": {
+      "score": 7.0,
+      "assessment": "Generally professional and readable, but medication terminology and a few documentation phrases reduce clinical precision.",
+      "details": "Most narrative text is polished and clinically understandable. However, \"Levosteirizine\" is an incorrect/nonstandard medication name, and unsupported phrasing such as \"teleconsultation home-measured\" and \"current skin rash\" reduces documentation reliability. The use of \"provisional diagnosis\" also changes the certainty level relative to the ground truth."
+    },
+    "overall_score": 7.1,
+    "verdict": "Good capture of the overall clinical encounter, but reduced by omission of some examination/past-history details, unsupported additions, invented oral routes, and the clinically important Levocetirizine medication-name error.",
+    "total_tt_latency": 30.4076
+  },
+  "observation_file": "/home/jugal/Documents/DataScience/Healthcare_backend_new/AI_backend/stream_result_20260725_133453.json",
+  "ground_truth_file": "/home/jugal/Documents/DataScience/Healthcare_backend_new/ground_truth.json",
+  "eval_model": "gpt-5.6-terra",
+  "eval_provider": "openai"
+}

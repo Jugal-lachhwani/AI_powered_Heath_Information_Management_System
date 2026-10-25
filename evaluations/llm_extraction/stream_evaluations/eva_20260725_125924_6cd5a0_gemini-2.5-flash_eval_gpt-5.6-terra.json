@@ -1,0 +1,31 @@
+{
+  "evaluation": {
+    "accuracy": {
+      "score": 8.0,
+      "assessment": "Mostly accurate with a few clinically meaningful omissions and one medication-name error.",
+      "details": "The observation correctly captures the fever course, peak temperature, paracetamol use and response, cough character, exertional breathlessness, denials, exposure history, comorbid hypertension, allergy, vitals, diagnosis, conditional investigations, safety-net advice, and follow-up timing. However, sore throat is omitted from the chief complaint, the examination omits that the patient was speaking comfortably in full sentences and had no severe weakness, and the diagnosis is labeled \"provisional\" although the ground truth does not characterize it this way. The medication name \"Levosteirizine\" does not accurately match Levocetirizine."
+    },
+    "missing_information": {
+      "score": 7.5,
+      "assessment": "Some relevant details are missing, but most core information is retained.",
+      "details": "The chief complaint omits sore throat. The clinical examination omits speaking comfortably in full sentences and absence of severe weakness. The past-history item list does not explicitly retain the negative history for diabetes, asthma, thyroid disease, surgeries, and admissions, though these are included in the narrative text. Warm saline gargles, steam inhalation, and twice-daily temperature/oxygen monitoring are moved from prescription/follow-up into advice rather than omitted, so they should not be treated as absent."
+    },
+    "hallucination": {
+      "score": 8.0,
+      "assessment": "Minimal hallucination, with a notable erroneous medication entry.",
+      "details": "The observation introduces \"Levosteirizine,\" which is not present in the ground truth and differs from the prescribed Levocetirizine. Calling the diagnosis \"provisional\" is also unsupported by the ground truth, though it does not introduce a new diagnosis. The URI wording in the examination reflects the documented diagnosis and is not considered a hallucination."
+    },
+    "clinical_language": {
+      "score": 8.0,
+      "assessment": "Generally professional and readable, with minor terminology and formatting issues.",
+      "details": "The documentation is coherent, clinically understandable, and well structured. However, \"Levosteirizine\" is a medication-name error, \"OD\" is less explicit than \"once daily,\" and phrases such as \"No concerning ... symptoms are present from history\" in an examination section blur history and examination findings. The added \"provisional diagnosis\" wording is also less precise than the source."
+    },
+    "overall_score": 7.9,
+    "verdict": "Good extraction with strong preservation of the core clinical encounter, but it requires correction of the Levocetirizine medication name and restoration of omitted sore throat and examination details.",
+    "total_tt_latency": 43.2611
+  },
+  "observation_file": "/home/jugal/Documents/DataScience/Healthcare_backend_new/AI_backend/stream_result_20260725_130605.json",
+  "ground_truth_file": "/home/jugal/Documents/DataScience/Healthcare_backend_new/ground_truth.json",
+  "eval_model": "gpt-5.6-terra",
+  "eval_provider": "openai"
+}

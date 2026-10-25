@@ -1,0 +1,31 @@
+{
+  "evaluation": {
+    "accuracy": {
+      "score": 8.5,
+      "assessment": "Mostly accurate with minor omissions and structural misplacement.",
+      "details": "The observation captures the fever course, medication use, cough characteristics, exertional breathlessness, negative symptoms, exposure history, examination findings, vitals, diagnosis, prescription, advice, and follow-up well. However, sore throat is omitted from the chief complaint, diabetes is omitted from past-history negatives, and the investigations are placed under advice rather than the investigations section. Blood pressure is split into systolic/diastolic entries rather than retained as 132/84 mmHg, which is acceptable but structurally different."
+    },
+    "missing_information": {
+      "score": 7.5,
+      "assessment": "Some clinically relevant ground-truth content is missing or incompletely structured.",
+      "details": "The chief complaint omits sore throat. Past history omits the explicit denial of diabetes. The investigations section is left empty, although its content is included under advice. The structured medication list omits warm saline gargles and steam inhalation despite including them in prescription text/items. General and systemic examination fields are blank despite relevant content being available in the examination narrative. Follow-up date_text is also blank."
+    },
+    "hallucination": {
+      "score": 9.0,
+      "assessment": "Very limited unsupported content; no major clinical hallucinations.",
+      "details": "No invented diagnosis, medication, or major clinical finding is present. Most facts are supported somewhere in the ground truth, even when placed in a different section. Minor unsupported or interpretive wording includes describing the encounter as a 'teleconsultation,' stating 'start treatment without investigations initially,' and characterizing fever as returning after a few hours; these are not explicitly documented in the ground truth."
+    },
+    "clinical_language": {
+      "score": 9.0,
+      "assessment": "Clear, professional, and clinically understandable language.",
+      "details": "The narrative is well written and uses appropriate clinical terminology. Minor issues include redundancy in the advice text, some informal phrasing such as 'right before the call,' and blank structured examination fields despite narrative documentation. The provisional qualifier is not harmful but was not present in the reference diagnosis."
+    },
+    "overall_score": 8.5,
+    "verdict": "High-quality extraction with strong clinical fidelity. Key improvements are to retain sore throat and diabetes denial, populate the investigations and examination subsections correctly, and include supportive therapies in the structured medications list.",
+    "total_tt_latency": 24.9959
+  },
+  "observation_file": "AI_backend/stream_result_20260725_113041.json",
+  "ground_truth_file": "ground_truth.json",
+  "eval_model": "gpt-5.6-terra",
+  "eval_provider": "openai"
+}

@@ -1,0 +1,31 @@
+{
+  "evaluation": {
+    "accuracy": {
+      "score": 6.5,
+      "assessment": "Partially accurate with notable omissions and a diagnosis-section misclassification.",
+      "details": "The observation accurately captures fever progression, prior paracetamol use, hypertension history, family history, penicillin allergy, vitals, viral URTI/pharyngitis diagnosis, conditional investigations, core medications, safety-net advice, and follow-up. However, sore throat is omitted from the chief complaint, much of the HPI is absent, systemic examination details are incomplete, and hypertension is incorrectly included as an active diagnosis rather than remaining in past history."
+    },
+    "missing_information": {
+      "score": 5.5,
+      "assessment": "Several clinically relevant details are missing, particularly from the HPI and examination.",
+      "details": "Missing HPI details include mostly dry cough with occasional mucus, exertional breathlessness on stairs, denial of chest pain/wheezing/severe shortness of breath, denial of loss of smell/taste, vomiting, diarrhea, abdominal pain, and dysuria, plus recent contact with a sick colleague. Past history omits no diabetes. Examination omits absence of swelling, skin rashes, severe weakness, mild respiratory involvement, and absence of concerning cardiac/abdominal/neurologic symptoms. Warm saline gargles and steam inhalation are absent from prescription but retained under advice, so they are not fully lost."
+    },
+    "hallucination": {
+      "score": 10.0,
+      "assessment": "No clinically meaningful hallucinations identified.",
+      "details": "All documented diagnoses, medications, symptoms, examination findings, vitals, and advice are supported somewhere in the ground truth. Hypertension is placed incorrectly in the diagnosis section, but it is present in the ground truth as past history and therefore is a structural/classification error rather than a hallucination."
+    },
+    "clinical_language": {
+      "score": 9.0,
+      "assessment": "Language is professional, clear, and clinically appropriate.",
+      "details": "The wording is polished and readable, with appropriate medical terminology and generally correct formatting. Minor structural issues include empty item fields in HPI/examination, use of the abbreviation BP instead of the ground-truth label Blood Pressure, and relocation of prescription supportive measures to advice."
+    },
+    "overall_score": 7.8,
+    "verdict": "Good extraction of core treatment, vitals, diagnosis, and follow-up, but incomplete HPI and examination documentation meaningfully reduce clinical completeness. No unsupported clinical content was invented.",
+    "total_tt_latency": 14.694
+  },
+  "observation_file": "/home/jugal/Documents/DataScience/Healthcare_backend_new/AI_backend/stream_result_20260725_132424.json",
+  "ground_truth_file": "/home/jugal/Documents/DataScience/Healthcare_backend_new/ground_truth.json",
+  "eval_model": "gpt-5.6-terra",
+  "eval_provider": "openai"
+}
