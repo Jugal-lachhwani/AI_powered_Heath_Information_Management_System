@@ -1,0 +1,116 @@
+1.
+Patient presents with fever for the past three days associated with body ache, headache, retro-orbital pain, chills, and nausea. No cough, shortness of breath, or bleeding manifestations.
+No significant past medical history. No known drug allergies. Family history reveals the patient's brother was recently diagnosed with dengue.
+On examination, temperature is 102.3°F, blood pressure 110/70 mmHg, pulse 96 per minute, and mild skin rash is present. Patient is hemodynamically stable.
+Diagnosis is Dengue fever.
+Advise CBC with platelet count, hematocrit, Dengue NS1 antigen, and Dengue IgM test.
+Prescribe Tablet Paracetamol 650 mg orally every 6 hours as needed for fever. Advise adequate oral fluids, rest, and monitoring for warning signs such as bleeding or severe abdominal pain.
+Follow up after 2 days with investigation reports.
+
+2.
+Patient complains of upper abdominal pain and burning sensation since two days associated with nausea and one episode of vomiting. No fever and no loose stools. Past history of acid peptic disease. No known drug allergy. On examination blood pressure is 120 over 78, pulse is 84 per minute, and abdomen is soft with mild epigastric tenderness. Diagnosis is acute gastritis. Advise complete blood count if symptoms persist. Prescribe pantoprazole 40 mg orally once daily before breakfast for 7 days and ondansetron 4 mg orally twice daily for 3 days. Advise soft diet, adequate fluids, and avoid spicy food. Follow up after 5 days.
+
+3.
+Doctor: Good morning, Mrs. Davis. What brings you in today? You mentioned on the intake form some ongoing fatigue and joint pain.
+Patient: Yes, doctor. It's been going on for about three months now. At first, I just thought I was working too hard, but the exhaustion is overwhelming. And my hands and wrists ache constantly, especially in the mornings. It takes me almost an hour to get my joints moving properly.
+Doctor: I see. The morning stiffness is a very important detail. Have you noticed any swelling or redness in those joints?
+Patient: Actually, yes. My knuckles look puffy, and my rings haven't been fitting. It's worse on my right hand, but the left is bad too. Sometimes my knees feel a bit stiff as well.
+Doctor: Have you had any fever, unintended weight loss, or rashes recently? 
+Patient: I've lost maybe 5 pounds without trying, but no fever. Oh, wait, I do get these dry eyes and a really dry mouth lately. I thought it was just the winter air.
+Doctor: That's good to know. Do you have a family history of autoimmune diseases? Rheumatoid arthritis, lupus, or thyroid issues?
+Patient: My mother has Hashimoto's, and I think my maternal aunt had rheumatoid arthritis. I'm not entirely sure about the aunt, but she had very crooked fingers. Also, I'm allergic to penicillin—it gives me hives.
+Doctor: Understood. Let's do a quick physical examination. Your blood pressure is 128/82, heart rate is 76, and temperature is 98.4°F. Looking at your hands, there is definite synovitis—inflammation—in the MCP and PIP joints of both hands. I don't see any characteristic rashes. 
+Patient: Is it arthritis? I'm only 42.
+Doctor: It is very possible it's an inflammatory arthritis, like Rheumatoid Arthritis, especially given your symptoms, the morning stiffness lasting over an hour, and the family history. The dry eyes and mouth could point to secondary Sjogren's syndrome. We'll need a comprehensive panel of blood tests to confirm. I'm going to order a Complete Blood Count (CBC), Comprehensive Metabolic Panel (CMP), Erythrocyte Sedimentation Rate (ESR), C-Reactive Protein (CRP), Rheumatoid Factor (RF), and Anti-CCP antibodies. We'll also do an ANA test just to be thorough.
+Patient: Okay, that sounds like a lot of blood. What should I do for the pain in the meantime? I've been taking over-the-counter ibuprofen, but it doesn't help much.
+Doctor: I'll prescribe a short course of Prednisone, 15 mg daily for 7 days, then taper down to 10 mg for another 7 days. That should quickly reduce the inflammation and give you some relief while we wait for the labs. I'll also prescribe Naproxen 500 mg twice a day to replace the ibuprofen; please take it with food. We will hold off on any disease-modifying drugs until we have a confirmed diagnosis.
+Patient: Will do. Thank you. When should I come back?
+Doctor: Let's schedule a follow-up appointment in two weeks. We'll review your lab results, see how you responded to the steroids, and discuss a long-term treatment plan. If you experience any severe stomach pain from the Naproxen, stop taking it and call the office.
+
+4.
+Doctor: Hello, Mr. Thompson. I have your recent lab results here. How have you been feeling since our last visit?
+Patient: Honestly, doc, I've been feeling pretty run down. My feet are constantly tingling, almost like pins and needles, and my vision gets a bit blurry sometimes.
+Doctor: I see. Let's look at these labs. Your HbA1c is up to 8.9%, which indicates your blood sugar has been running quite high over the last three months. Your fasting glucose was 185 mg/dL. Your blood pressure today is 145/92, which is elevated as well. Have you been taking your Metformin and Lisinopril regularly?
+Patient: Most days, yes. But I admit I miss doses occasionally when I work late shifts. And my diet hasn't been great—a lot of takeout.
+Doctor: That's a major factor. Let's do a quick foot exam. [Pause] When I touch your toes with this monofilament wire, tell me if you can feel it. 
+Patient: I didn't feel anything on the big toe, but I felt the side.
+Doctor: That decreased sensation is peripheral neuropathy, caused by the high blood sugars damaging the small nerves. We really need to get your diabetes under tighter control to prevent this from worsening, and to protect your kidneys and eyes.
+Patient: That sounds serious. Do I need insulin?
+Doctor: Not necessarily yet, but we do need to step up your therapy. I'm going to keep you on the Metformin 1000 mg twice daily, but I want to add a medication called Empagliflozin, an SGLT2 inhibitor, 10 mg once daily in the morning. It will help your body excrete extra sugar through your urine and also provides cardiovascular and kidney protection.
+Patient: Okay. Any side effects?
+Doctor: It can increase the risk of urinary tract or yeast infections, so staying well-hydrated and practicing good hygiene is crucial. For your blood pressure, I'm increasing your Lisinopril to 20 mg daily. I also want you to start Gabapentin 300 mg at bedtime to help with the nerve pain in your feet.
+Patient: Got it. And my diet?
+Doctor: I'm putting in a referral for you to see a registered dietitian and a diabetes educator. We need to work on reducing refined carbohydrates and incorporating more daily activity—even a 20-minute walk makes a difference. Let's get repeat labs, including a lipid panel and urine microalbumin, in three months, but I want to see you back here in one month to check your blood pressure and see how you're tolerating the new medications.
+Patient: Understood. I'll make the appointments.
+
+5.
+Doctor: Hi Sarah, and hello Mrs. Green. What brings you both in today?
+Parent: Sarah's been having a really hard time breathing for the last two days. She's been coughing non-stop, especially at night, and she complains her chest feels tight.
+Doctor: Oh dear, I'm sorry to hear that, Sarah. Did this start after a cold?
+Parent: No cold, but we were visiting my sister who has a cat, and Sarah is allergic. We gave her the over-the-counter antihistamine, but the coughing won't stop. She used her Albuterol inhaler twice yesterday, but it only helped for an hour or so.
+Doctor: Let's have a listen to your lungs, Sarah. Take some big, deep breaths through your mouth. [Pause] Yes, I'm hearing diffuse expiratory wheezing across both lung fields. Your oxygen saturation is at 94%, which is borderline. You're definitely having an asthma exacerbation triggered by the cat dander.
+Parent: Should we give her a breathing treatment here?
+Doctor: Yes, we are going to do a nebulizer treatment with Albuterol and Ipratropium right now in the office to help open up those airways. Because the albuterol inhaler wasn't holding her at home, she needs a short course of oral steroids to bring down the airway inflammation. I'll prescribe Prednisolone syrup, 15 mg once a day for 5 days.
+Parent: Will she need to change her regular inhaler? She currently just uses the Albuterol as needed.
+Doctor: Yes. Given that she is having nocturnal symptoms and needing her rescue inhaler more frequently, we need to step up her daily controller medication. I'm prescribing Fluticasone HFA, an inhaled corticosteroid. She needs to take two puffs of that every morning and two every evening, using a spacer device. This is preventative and needs to be taken every day, even when she feels well.
+Parent: Okay, so the Fluticasone is daily, the Albuterol is just for emergencies, and the Prednisolone is just for the next 5 days?
+Doctor: Exactly. Also, after she uses the Fluticasone, make sure she rinses her mouth out with water and spits it out to prevent thrush. I'm updating her Asthma Action Plan to reflect these changes. If her breathing becomes labored, her chest pulls in, or her oxygen drops below 92%, she needs to go to the emergency room.
+Parent: We understand. We'll start the new regimen as soon as we pick it up.
+Doctor: We'll recheck her oxygen in about 15 minutes after the nebulizer. Assuming she's clear, I want to see you back for a follow-up in one week to ensure the exacerbation has fully resolved and that she's tolerating the new daily inhaler.
+
+## very complex convo:
+
+Edited .gitignore
+Edited evaluation.txt
+Viewed test_api.py:42-65
+
+Here is a cluttered, non-linear version of the conversation. It includes all the exact same data points, symptoms, and medical fields, but mixed together the way people naturally talk—interrupting, volunteering information early, and circling back to previous topics.
+
+***
+
+**Doctor:** Hello? Am I speaking to, um, Mr. ABC? This is Dr. Sharma.
+**Patient (ABC):** Yeah, yes doctor, it’s ABC here. Sorry, I was just... *coughs*... my throat is killing me. Good morning.
+**Doctor:** Good morning ABC. How can I help you today? What's going on?
+**Patient:** Well, it's this fever. And I have a cough, and my whole body just... I have body pain everywhere. I’m just feeling very tired, like, exhausted. It started about three days ago.
+**Doctor:** Three days, okay. Was the fever high right from the start?
+**Patient:** Oh, no, initially it was mild, but then yesterday evening it shot up. It went up to around 101°F. Oh, and I took some Paracetamol for it. The 650 mg one. Twice yesterday.
+**Doctor:** Okay, Paracetamol 650 twice. Did that help?
+**Patient:** It reduced the fever for a few hours, yeah, but it came right back. Which reminds me, my temperature right now—I checked it right before you called because, you know, teleconsultation—I have a thermometer and all that stuff at home. It’s 100.8°F right now.
+**Doctor:** 100.8. Good that you checked. Do you happen to have a BP machine, pulse oximeter, or weighing scale too?
+**Patient:** Yeah, I checked everything! My weight is 74 kilograms. And the oxygen saturation is 98%. Pulse is 92 per minute. Oh, and blood pressure is 132 over 84 mmHg.
+**Doctor:** 132 over 84. Have you ever been diagnosed with high blood pressure? Or diabetes, asthma... anything like that?
+**Patient:** Hypertension, yeah. They diagnosed me about five years ago. I take Amlodipine for it. 5 mg, once daily. But no asthma or thyroid disease. And no surgeries or previous hospital admissions.
+**Doctor:** Okay, continue the Amlodipine. Now, about this cough—is it dry or are you bringing out sputum?
+**Patient:** It's mostly dry. I mean, occasionally I cough a little mucus, but not much. But you know what worries me? When I'm climbing stairs, I feel slightly breathless.
+**Doctor:** Any chest pain with that?
+**Patient:** No chest pain, no.
+**Doctor:** Any wheezing or severe shortness of breath?
+**Patient:** No, just the slight breathlessness on stairs.
+**Doctor:** Loss of smell or taste? Vomiting, diarrhea?
+**Patient:** No doctor, none of that. No abdominal pain or burning during urination either. Oh, I should probably mention, one of my office colleagues had a viral fever last week. So I’ve definitely been in contact with someone who was sick.
+**Doctor:** I see. That's good to know. And does anyone in your family have diabetes, hypertension, heart disease, or asthma?
+**Patient:** My father has diabetes. And my mother has hypertension, just like me.
+**Doctor:** Okay. Are you allergic to any medicines or foods?
+**Patient:** Penicillin. Yes doctor, I'm allergic to Penicillin. I develop a skin rash after taking it.
+**Doctor:** Thank you for informing me, I'll avoid prescribing Penicillin-based medicines. So, just listening to you, you're able to speak comfortably in full sentences. Do you notice any swelling, skin rashes right now, or severe weakness?
+**Patient:** No swelling or rashes, no.
+**Doctor:** Alright. From your description, you appear conscious, oriented, mildly febrile, and not in respiratory distress. Your respiratory system appears mildly affected with an upper respiratory tract infection. No concerning cardiac, abdominal, or neurological symptoms are present from your history. My provisional diagnosis is Acute Viral Upper Respiratory Tract Infection. Basically, a viral fever with pharyngitis.
+**Patient:** Ah, okay. Should I go get a COVID test or an X-ray?
+**Doctor:** Since your oxygen level is normal at 98% and your symptoms are mild, we'll start treatment first. However, I'd like you to get investigations *only* if the fever continues beyond 48 hours or your symptoms worsen.
+**Patient:** What kind of investigations?
+**Doctor:** A Complete Blood Count (CBC), C-Reactive Protein (CRP), a COVID-19 or Influenza test if indicated, and a Chest X-ray if that breathlessness increases.
+**Patient:** Okay, only if it gets worse. What should I take now? More Paracetamol?
+**Doctor:** Yes, I'm prescribing Tablet Paracetamol 650 mg. One tablet every 6 hours, but ONLY if the fever exceeds 100°F. Maximum 4 tablets per day. Also, continue your Amlodipine 5 mg once daily for your blood pressure.
+**Patient:** Okay, Paracetamol and Amlodipine. Anything for the cough and throat?
+**Doctor:** I'm also prescribing Tablet Levocetirizine 5 mg. Take it once daily at night for 5 days. For the throat, do warm saline gargles three to four times daily, and steam inhalation twice daily.
+**Patient:** Steam twice a day, got it.
+**Doctor:** Make sure you drink plenty of fluids, get adequate rest, and eat soft nutritious food. Wear a mask if you're around family members to reduce transmission.
+**Patient:** Okay.
+**Doctor:** Now, please listen carefully. If you develop difficulty breathing, persistent high fever above 102°F, oxygen saturation below 94%, severe chest pain, or confusion... visit the nearest emergency department immediately.
+**Patient:** ER if oxygen is below 94, fever above 102. Okay doctor. I'll follow all your instructions.
+**Doctor:** I'd like to review you after three days, or earlier if your symptoms worsen. Please keep a record of your temperature and oxygen saturation twice daily.
+**Patient:** Twice daily records, sure doctor. Thank you very much.
+**Doctor:** You're welcome, ABC. Take care, get plenty of rest, and I wish you a speedy recovery.
+**Patient:** Thank you doctor. Goodbye.
+**Doctor:** Goodbye.
+
