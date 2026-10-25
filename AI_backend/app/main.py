@@ -24,8 +24,10 @@ from .llm.client import LLMClient
 from .routes import (
     health_router,
     ws_router,
+    intake_ws_router,
     set_health_llm_client,
     set_ws_llm_client,
+    set_intake_ws_llm_client,
 )
 
 
@@ -70,6 +72,7 @@ async def lifespan(app: FastAPI):
     llm_client = LLMClient(settings)
     set_health_llm_client(llm_client)
     set_ws_llm_client(llm_client)
+    set_intake_ws_llm_client(llm_client)
 
     logger.info("Server ready.")
     yield
@@ -106,3 +109,4 @@ app.add_middleware(
 
 app.include_router(health_router)      # GET /health
 app.include_router(ws_router)          # WS  /ws/stream
+app.include_router(intake_ws_router)   # WS  /ws/intake
