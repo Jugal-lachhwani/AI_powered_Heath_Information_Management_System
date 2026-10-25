@@ -1,0 +1,5 @@
+Model,Medical Accuracy (/10),Formatting (/10),Latency (/10),Coherence (/10),Total Score (/40),Multilingual Support
+Deepgram (nova-3),8,6,9,8,31,Yes (40+ languages)
+Groq (Whisper),4,9,10,6,29,Yes (~100 languages)
+Whisper (Medium),9,9,2,7,27,Yes (~100 languages)
+NVIDIA (Parakeet 1.1b),3,6,9,5,23,No (English only)

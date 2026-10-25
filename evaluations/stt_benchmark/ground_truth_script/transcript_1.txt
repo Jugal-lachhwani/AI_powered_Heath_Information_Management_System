@@ -1,0 +1,162 @@
+# Telephonic Consultation (Sample Conversation)
+
+**Doctor:** Good morning. This is Dr. Sharma speaking. Am I talking to Mr. ABC?
+
+**Patient (ABC):** Yes doctor, this is ABC.
+
+**Doctor:** Good morning, ABC. How can I help you today?
+
+**Patient:** Doctor, I've been having fever, cough, and body pain for the last three days. I also have a sore throat and feel very tired.
+
+**Doctor:** I understand. Let's go through your symptoms carefully. When exactly did your fever start?
+
+**Patient:** It started about three days ago. Initially it was mild, but yesterday evening it went up to around 101°F.
+
+**Doctor:** Is the cough dry or are you bringing out sputum?
+
+**Patient:** It's mostly dry. Occasionally I cough a little mucus, but not much.
+
+**Doctor:** Are you having any difficulty in breathing or chest pain?
+
+**Patient:** No chest pain, but I feel slightly breathless when climbing stairs.
+
+**Doctor:** Any loss of smell or taste, vomiting, or diarrhea?
+
+**Patient:** No doctor.
+
+---
+
+### Chief Complaint & History of Present Illness
+
+**Doctor:** So your main complaints are fever, dry cough, sore throat, body ache, and fatigue for the past three days. Have you taken any medicines?
+
+**Patient:** Yes, I took Paracetamol 650 mg twice yesterday. It reduced the fever for a few hours.
+
+**Doctor:** Have you recently traveled or been in contact with anyone who was sick?
+
+**Patient:** Yes, one of my office colleagues had a viral fever last week.
+
+---
+
+### Past Medical History
+
+**Doctor:** Do you have any medical conditions like diabetes, high blood pressure, asthma, or thyroid disease?
+
+**Patient:** I have hypertension diagnosed about five years ago.
+
+**Doctor:** What medicine are you taking?
+
+**Patient:** Amlodipine 5 mg once daily.
+
+**Doctor:** Any surgeries or previous hospital admissions?
+
+**Patient:** No doctor.
+
+---
+
+### Family History
+
+**Doctor:** Does anyone in your family have diabetes, hypertension, heart disease, or asthma?
+
+**Patient:** My father has diabetes and my mother has hypertension.
+
+---
+
+### Drug Allergy
+
+**Doctor:** Are you allergic to any medicines or foods?
+
+**Patient:** Yes doctor, I'm allergic to Penicillin. I develop a skin rash after taking it.
+
+**Doctor:** Thank you for informing me. I'll avoid prescribing Penicillin-based medicines.
+
+---
+
+### Examination
+
+**Doctor:** Since this is a teleconsultation, do you have a thermometer, BP machine, pulse oximeter, or weighing scale at home?
+
+**Patient:** Yes doctor.
+
+**Doctor:** Please tell me your current readings.
+
+**Patient:** My temperature is 100.8°F, blood pressure is 132 over 84 mmHg, pulse is 92 per minute, oxygen saturation is 98%, and my weight is 74 kilograms.
+
+---
+
+### General Examination
+
+**Doctor:** Are you able to speak comfortably in full sentences?
+
+**Patient:** Yes doctor.
+
+**Doctor:** Do you notice any swelling, skin rashes, or severe weakness?
+
+**Patient:** No.
+
+**Doctor:** From your description, you appear conscious, oriented, mildly febrile, and not in respiratory distress.
+
+---
+
+### Systemic Examination (Telephonic Assessment)
+
+**Doctor:** Any wheezing or severe shortness of breath?
+
+**Patient:** No.
+
+**Doctor:** Any abdominal pain or burning during urination?
+
+**Patient:** No.
+
+**Doctor:** Based on your symptoms, your respiratory system appears mildly affected with an upper respiratory tract infection. No concerning cardiac, abdominal, or neurological symptoms are present from your history.
+
+---
+
+### Diagnosis
+
+**Doctor:** My provisional diagnosis is **Acute Viral Upper Respiratory Tract Infection (Viral Fever with Pharyngitis).**
+
+---
+
+### Investigations
+
+**Doctor:** Since your oxygen level is normal and symptoms are mild, we'll start treatment. However, I'd like you to get the following investigations if the fever continues beyond 48 hours or symptoms worsen:
+
+* Complete Blood Count (CBC)
+* C-Reactive Protein (CRP)
+* COVID-19 / Influenza test if indicated
+* Chest X-ray if breathlessness increases
+
+---
+
+### Prescription
+
+**Doctor:** I'm prescribing:
+
+* Tablet Paracetamol 650 mg – One tablet every 6 hours if fever exceeds 100°F (maximum 4 tablets/day).
+* Tablet Levocetirizine 5 mg – Once daily at night for 5 days.
+* Warm saline gargles three to four times daily.
+* Steam inhalation twice daily.
+* Continue Amlodipine 5 mg once daily for your blood pressure.
+
+---
+
+### Advice
+
+**Doctor:** Drink plenty of fluids, get adequate rest, and eat soft nutritious food. Wear a mask if you're around family members to reduce transmission. If you develop difficulty breathing, persistent high fever above 102°F, oxygen saturation below 94%, severe chest pain, or confusion, visit the nearest emergency department immediately.
+
+**Patient:** Okay doctor. I'll follow all your instructions.
+
+---
+
+### Follow-up
+
+**Doctor:** I'd like to review you after **three days**, or earlier if your symptoms worsen. Please keep a record of your temperature and oxygen saturation twice daily.
+
+**Patient:** Sure doctor. Thank you very much.
+
+**Doctor:** You're welcome, ABC. Take care, get plenty of rest, and I wish you a speedy recovery.
+
+**Patient:** Thank you doctor. Goodbye.
+
+**Doctor:** Goodbye.
