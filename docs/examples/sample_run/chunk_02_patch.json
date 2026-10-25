@@ -1,0 +1,86 @@
+{
+  "history_of_present_illness": {
+    "text": "Patient presents with fever, cough, body pain, and fatigue for 3 days. Fever was initially mild, then spiked to 101 °F yesterday evening. Took Paracetamol 650 mg twice yesterday, which temporarily reduced fever. Cough is mostly dry, occasionally with a little mucus. Patient reports slight breathlessness on climbing stairs. Denies chest pain, wheezing, severe shortness of breath, loss of smell or taste, vomiting, diarrhea, abdominal pain, or burning during urination. Patient had contact with an office colleague who had a viral fever last week.",
+    "items": [
+      "Fever for 3 days",
+      "Cough (mostly dry, occasional mucus)",
+      "Body pain",
+      "Fatigue",
+      "Fever spiked to 101 °F yesterday evening",
+      "Took Paracetamol 650 mg twice yesterday with temporary relief",
+      "Slight breathlessness on climbing stairs",
+      "Denies chest pain",
+      "Denies wheezing or severe shortness of breath",
+      "Denies loss of smell or taste",
+      "Denies vomiting or diarrhea",
+      "Denies abdominal pain or burning during urination",
+      "Contact history with office colleague with viral fever last week"
+    ],
+    "suggestions": []
+  },
+  "family_history": {
+    "text": "Father has diabetes. Mother has hypertension.",
+    "items": [
+      "Father: Diabetes",
+      "Mother: Hypertension"
+    ],
+    "suggestions": []
+  },
+  "drug_allergy": {
+    "text": "Allergic to Penicillin, develops a skin rash after taking it.",
+    "items": [
+      "Penicillin (skin rash)"
+    ],
+    "suggestions": []
+  },
+  "clinical_examination": {
+    "text": "Current vitals: Temperature 100.8 °F, BP 132/84 mmHg, Pulse 92/min, SpO2 98%, Weight 74 kg. Patient appears conscious, oriented, mildly febrile, and not in respiratory distress. No swelling or rashes noted. Respiratory system appears mildly affected with an upper respiratory tract infection. No concerning cardiac, abdominal, or neurological symptoms are present from history.",
+    "items": [
+      "Conscious and oriented",
+      "Mildly febrile",
+      "Not in respiratory distress",
+      "No swelling or rashes",
+      "Respiratory system mildly affected (URI)",
+      "No concerning cardiac, abdominal, or neurological symptoms"
+    ],
+    "suggestions": [],
+    "vitals": [
+      {
+        "label": "Temperature",
+        "value": "100.8",
+        "unit": "°F"
+      },
+      {
+        "label": "BP",
+        "value": "132/84",
+        "unit": "mmHg"
+      },
+      {
+        "label": "Pulse",
+        "value": "92",
+        "unit": "/min"
+      },
+      {
+        "label": "SpO2",
+        "value": "98",
+        "unit": "%"
+      },
+      {
+        "label": "Weight",
+        "value": "74",
+        "unit": "kg"
+      }
+    ],
+    "general_examination": "Conscious, oriented, mildly febrile, not in respiratory distress. No swelling or rashes.",
+    "systemic_examination": "Respiratory system appears mildly affected with an upper respiratory tract infection. No concerning cardiac, abdominal, or neurological symptoms are present from history."
+  },
+  "diagnosis": {
+    "text": "Provisional diagnosis: Acute viral upper respiratory tract infection (viral fever with pharyngitis).",
+    "items": [
+      "Acute viral upper respiratory tract infection",
+      "Viral fever with pharyngitis"
+    ],
+    "suggestions": [],
+    "icd10": []
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "chief_complaint": {
+    "text": "Fever, cough, body pain, and fatigue.",
+    "items": [
+      "Fever",
+      "Cough",
+      "Body pain",
+      "Fatigue"
+    ],
+    "suggestions": []
+  },
+  "history_of_present_illness": {
+    "text": "Patient presents with fever, cough, body pain, and fatigue for 3 days. Fever was initially mild, then spiked to 101 °F yesterday evening. Took Paracetamol 650 mg twice yesterday, which temporarily reduced fever.",
+    "items": [],
+    "suggestions": [
+      "Consider documenting the nature of the cough (e.g., dry/productive)."
+    ]
+  },
+  "past_history": {
+    "text": "History of Hypertension, diagnosed 5 years ago, on Amlodipine 5 mg once daily. No history of diabetes, asthma, thyroid disease, surgeries, or previous hospital admissions.",
+    "items": [
+      "Hypertension (diagnosed 5 years ago)",
+      "On Amlodipine 5 mg OD"
+    ],
+    "suggestions": []
+  },
+  "family_history": {
+    "text": "",
+    "items": [],
+    "suggestions": [
+      "Consider documenting family medical history."
+    ]
+  },
+  "drug_allergy": {
+    "text": "",
+    "items": [],
+    "suggestions": [
+      "Consider documenting any known drug allergies."
+    ]
+  },
+  "clinical_examination": {
+    "text": "Current vitals: Temperature 100.8 °F, BP 132/84 mmHg, Pulse 92/min, SpO2 98%, Weight 74 kg.",
+    "items": [],
+    "suggestions": [
+      "Consider documenting general examination findings.",
+      "Consider documenting systemic examination findings."
+    ],
+    "vitals": [
+      {
+        "label": "Temperature",
+        "value": "100.8",
+        "unit": "°F"
+      },
+      {
+        "label": "BP",
+        "value": "132/84",
+        "unit": "mmHg"
+      },
+      {
+        "label": "Pulse",
+        "value": "92",
+        "unit": "/min"
+      },
+      {
+        "label": "SpO2",
+        "value": "98",
+        "unit": "%"
+      },
+      {
+        "label": "Weight",
+        "value": "74",
+        "unit": "kg"
+      }
+    ],
+    "general_examination": "",
+    "systemic_examination": ""
+  },
+  "diagnosis": {
+    "text": "",
+    "items": [],
+    "suggestions": [
+      "Consider documenting a provisional or differential diagnosis."
+    ],
+    "icd10": []
+  },
+  "investigations": {
+    "text": "",
+    "items": [],
+    "suggestions": [
+      "Consider ordering relevant investigations based on clinical findings."
+    ]
+  },
+  "prescription": {
+    "text": "Continue Amlodipine 5 mg once daily.",
+    "items": [],
+    "suggestions": [
+      "Consider prescribing medication for current symptoms.",
+      "Consider documenting the route and duration for Amlodipine."
+    ],
+    "medications": [
+      {
+        "medicine": "Amlodipine",
+        "dose": "5 mg",
+        "route": "",
+        "frequency": "OD",
+        "duration": "",
+        "remarks": "Continue"
+      }
+    ]
+  },
+  "advice": {
+    "text": "",
+    "items": [],
+    "suggestions": [
+      "Consider providing general advice for fever and cough."
+    ]
+  },
+  "follow_up": {
+    "text": "",
+    "items": [],
+    "suggestions": [
+      "Consider scheduling a follow-up appointment."
+    ],
+    "date_text": "",
+    "instruction": ""
+  }
+}
