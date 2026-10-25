@@ -1,0 +1,169 @@
+{
+  "chief_complaint": {
+    "text": "Severe sore throat with fever, cough and body ache",
+    "items": [
+      "Sore throat",
+      "Fever",
+      "Cough",
+      "Body ache"
+    ],
+    "suggestions": [
+      "Consider documenting symptom duration more precisely"
+    ],
+    "confidence": 0.8
+  },
+  "history_of_present_illness": {
+    "text": "Symptoms started 3 days ago with mild fever, which increased to 101°F yesterday evening. Took 650mg paracetamol twice, which provided temporary relief.",
+    "items": [
+      "Fever started 3 days ago",
+      "Fever increased to 101°F",
+      "Took paracetamol"
+    ],
+    "suggestions": [
+      "Consider recording severity of symptoms"
+    ],
+    "confidence": 0.8
+  },
+  "past_history": {
+    "text": "Hypertension diagnosed 5 years ago, on Amlodipine 5mg once daily",
+    "items": [
+      "Hypertension",
+      "Amlodipine 5mg once daily"
+    ],
+    "suggestions": [],
+    "confidence": 0.8
+  },
+  "family_history": {
+    "text": "Father has diabetes, mother has hypertension",
+    "items": [
+      "Father - diabetes",
+      "Mother - hypertension"
+    ],
+    "suggestions": [],
+    "confidence": 0.8
+  },
+  "drug_allergy": {
+    "text": "Allergic to penicillin, causes skin rashes",
+    "items": [
+      "Penicillin allergy"
+    ],
+    "suggestions": [],
+    "confidence": 0.8
+  },
+  "clinical_examination": {
+    "text": "Temperature 100.8°F, Pulse 92/min, BP 132/84 mmHg, SpO2 98%, mild dry cough, breathlessness on exertion",
+    "items": [
+      "Mild dry cough",
+      "Breathlessness on exertion"
+    ],
+    "suggestions": [
+      "Consider documenting more detailed examination findings"
+    ],
+    "confidence": 0.6,
+    "vitals": [
+      {
+        "label": "Temperature",
+        "value": "100.8",
+        "unit": "°F"
+      },
+      {
+        "label": "Pulse",
+        "value": "92",
+        "unit": "/min"
+      },
+      {
+        "label": "BP",
+        "value": "132/84",
+        "unit": "mmHg"
+      },
+      {
+        "label": "SpO2",
+        "value": "98",
+        "unit": "%"
+      }
+    ],
+    "general_examination": "No swelling, skin rashes or severe weakness",
+    "systemic_examination": "Mild infection in upper respiratory tract, no worrying symptoms related to heart, stomach or nervous system"
+  },
+  "diagnosis": {
+    "text": "Acute viral upper respiratory tract infection",
+    "items": [
+      "Acute viral upper respiratory tract infection"
+    ],
+    "suggestions": [],
+    "confidence": 0.8,
+    "icd10": []
+  },
+  "investigations": {
+    "text": "May need CBC, CRP, COVID-19 or influenza test, and chest X-ray if symptoms worsen",
+    "items": [
+      "CBC",
+      "CRP",
+      "COVID-19 test",
+      "Influenza test",
+      "Chest X-ray"
+    ],
+    "suggestions": [],
+    "confidence": 0.6
+  },
+  "prescription": {
+    "text": "Paracetamol 650mg for fever, Amlodipine 5mg once daily, Levocetirizine 5mg once nightly for 5 days",
+    "items": [
+      "Paracetamol",
+      "Amlodipine",
+      "Levocetirizine"
+    ],
+    "suggestions": [
+      "Consider documenting potential side effects of medications"
+    ],
+    "confidence": 0.8,
+    "medications": [
+      {
+        "medicine": "Paracetamol",
+        "dose": "650mg",
+        "route": "",
+        "frequency": "every 6 hours if fever > 100°F",
+        "duration": "",
+        "remarks": ""
+      },
+      {
+        "medicine": "Amlodipine",
+        "dose": "5mg",
+        "route": "",
+        "frequency": "once daily",
+        "duration": "",
+        "remarks": ""
+      },
+      {
+        "medicine": "Levocetirizine",
+        "dose": "5mg",
+        "route": "",
+        "frequency": "once nightly",
+        "duration": "5 days",
+        "remarks": ""
+      }
+    ]
+  },
+  "advice": {
+    "text": "Rest, drink enough water, eat nutritious food, wear mask, gargle with warm salt water, steam inhalation twice daily",
+    "items": [
+      "Rest",
+      "Drink enough water",
+      "Eat nutritious food",
+      "Wear mask",
+      "Gargle with warm salt water",
+      "Steam inhalation"
+    ],
+    "suggestions": [],
+    "confidence": 0.8
+  },
+  "follow_up": {
+    "text": "Follow up after 3 days, or earlier if symptoms worsen",
+    "items": [],
+    "suggestions": [],
+    "confidence": 0.8,
+    "date_text": "After 3 days",
+    "instruction": "Follow up after 3 days, or earlier if symptoms worsen"
+  },
+  "drug_interactions": []
+}

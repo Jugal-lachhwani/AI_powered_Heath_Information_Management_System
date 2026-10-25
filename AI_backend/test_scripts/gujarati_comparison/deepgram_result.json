@@ -1,0 +1,162 @@
+{
+  "chief_complaint": {
+    "text": "Fever, cough, body ache, and sore throat for 3 days",
+    "items": [
+      "Fever",
+      "cough",
+      "body ache",
+      "sore throat for 3 days"
+    ],
+    "suggestions": [
+      "Consider documenting symptom severity",
+      "Consider recording temperature and oxygen saturation more frequently"
+    ],
+    "confidence": 0.8
+  },
+  "history_of_present_illness": {
+    "text": "Patient has been experiencing fever, cough, body ache, and sore throat for 3 days, with symptoms worsening over time",
+    "items": [
+      "Fever for 3 days",
+      "Cough",
+      "Body ache",
+      "Sore throat"
+    ],
+    "suggestions": [
+      "Consider asking about recent travel history",
+      "Consider asking about exposure to anyone with similar symptoms"
+    ],
+    "confidence": 0.8
+  },
+  "past_history": {
+    "text": "Patient has hypertension, diagnosed 5 years ago, and is taking Amlodipine 5 mg daily",
+    "items": [
+      "Hypertension"
+    ],
+    "suggestions": [
+      "Consider asking about medication adherence",
+      "Consider asking about any changes in medication regimen"
+    ],
+    "confidence": 0.8
+  },
+  "family_history": {
+    "text": "Patient's father has diabetes, and patient's mother has hypertension",
+    "items": [
+      "Father has diabetes",
+      "Mother has hypertension"
+    ],
+    "suggestions": [
+      "Consider asking about other family members with medical conditions"
+    ],
+    "confidence": 0.8
+  },
+  "drug_allergy": {
+    "text": "Patient is allergic to penicillin",
+    "items": [
+      "Penicillin allergy"
+    ],
+    "suggestions": [
+      "Consider asking about other medication allergies"
+    ],
+    "confidence": 0.8
+  },
+  "clinical_examination": {
+    "text": "Patient's temperature is 101.8°F, oxygen saturation is 98%, pulse is 92/min, and blood pressure is 132/84 mmHg",
+    "items": [],
+    "suggestions": [
+      "Consider recording vital signs more frequently"
+    ],
+    "confidence": 0.8,
+    "vitals": [
+      {
+        "label": "Temperature",
+        "value": "101.8",
+        "unit": "°F"
+      },
+      {
+        "label": "Oxygen Saturation",
+        "value": "98",
+        "unit": "%"
+      },
+      {
+        "label": "Pulse",
+        "value": "92",
+        "unit": "/min"
+      },
+      {
+        "label": "Blood Pressure",
+        "value": "132/84",
+        "unit": "mmHg"
+      }
+    ],
+    "general_examination": "",
+    "systemic_examination": ""
+  },
+  "diagnosis": {
+    "text": "Acute viral upper respiratory tract infection",
+    "items": [],
+    "suggestions": [
+      "Consider ordering laboratory tests to rule out other conditions"
+    ],
+    "confidence": 0.6,
+    "icd10": []
+  },
+  "investigations": {
+    "text": "No investigations ordered at this time",
+    "items": [
+      "No investigations at this time"
+    ],
+    "suggestions": [
+      "Consider ordering CBC, CRP, and other laboratory tests if symptoms worsen"
+    ],
+    "confidence": 0.4
+  },
+  "prescription": {
+    "text": "Patient is prescribed Paracetamol 650 mg every 6 hours, and Amlodipine 5 mg daily",
+    "items": [],
+    "suggestions": [
+      "Consider prescribing medication for cough and sore throat"
+    ],
+    "confidence": 0.8,
+    "medications": [
+      {
+        "medicine": "Paracetamol",
+        "dose": "650 mg",
+        "route": "",
+        "frequency": "every 6 hours",
+        "duration": "",
+        "remarks": ""
+      },
+      {
+        "medicine": "Amlodipine",
+        "dose": "5 mg",
+        "route": "",
+        "frequency": "daily",
+        "duration": "",
+        "remarks": ""
+      }
+    ]
+  },
+  "advice": {
+    "text": "Patient is advised to rest, drink plenty of fluids, and eat a soft diet",
+    "items": [
+      "Rest",
+      "Plenty of fluids",
+      "Soft diet"
+    ],
+    "suggestions": [
+      "Consider advising patient to avoid close contact with others"
+    ],
+    "confidence": 0.8
+  },
+  "follow_up": {
+    "text": "Patient is advised to follow up in 3 days, and to contact the doctor if symptoms worsen",
+    "items": [],
+    "suggestions": [
+      "Consider scheduling a follow-up appointment"
+    ],
+    "confidence": 0.8,
+    "date_text": "3 days",
+    "instruction": "Follow up in 3 days"
+  },
+  "drug_interactions": []
+}

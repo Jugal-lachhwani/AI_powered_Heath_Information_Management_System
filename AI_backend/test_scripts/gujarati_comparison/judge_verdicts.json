@@ -1,0 +1,16 @@
+{
+  "sarvam": {
+    "medical_accuracy": 8,
+    "completeness": 7,
+    "coherence": 9,
+    "ground_truth_match": 7,
+    "notes": "The candidate JSON generally captures the main clinical points, but sometimes lacks detail or specificity found in the ground truth, such as the full range of symptoms, detailed examination findings, and complete medication instructions."
+  },
+  "deepgram": {
+    "medical_accuracy": 8,
+    "completeness": 6,
+    "coherence": 9,
+    "ground_truth_match": 6,
+    "notes": "Candidate misses details like symptom duration, recent contact with a sick colleague, and specific medication instructions, but captures major clinical points and has clear, readable text."
+  }
+}

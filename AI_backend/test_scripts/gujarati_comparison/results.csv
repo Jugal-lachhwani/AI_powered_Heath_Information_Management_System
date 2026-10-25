@@ -1,0 +1,3 @@
+Provider,STT Time (s),LLM Extraction Time (s),Total Time (s),Medical Accuracy (/10),Completeness (/10),Coherence (/10),Ground Truth Match (/10),Average Score (/10),Notes
+"Sarvam (saaras:v3, translate mode)",0.0,3.2,3.2,8,7,9,7,7.8,"The candidate JSON generally captures the main clinical points, but sometimes lacks detail or specificity found in the ground truth, such as the full range of symptoms, detailed examination findings, and complete medication instructions."
+"Deepgram (nova-3 general, gu + LLM translation)",42.7,3.3,46.0,8,6,9,6,7.2,"Candidate misses details like symptom duration, recent contact with a sick colleague, and specific medication instructions, but captures major clinical points and has clear, readable text."

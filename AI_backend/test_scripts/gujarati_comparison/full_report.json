@@ -1,0 +1,560 @@
+{
+  "test_metadata": {
+    "audio_file": "Guj_sample.wav",
+    "audio_duration_seconds": 295.5,
+    "audio_language": "Gujarati (gu-IN)",
+    "ground_truth_source": "ground_truth.json (English mock consultation, same script)",
+    "judge_llm": "groq/llama-3.3-70b-versatile (Gemini free-tier daily quota was exhausted)"
+  },
+  "providers": {
+    "sarvam": {
+      "stt_model": "saaras:v3 (mode=translate, gu-IN -> English)",
+      "stt_time_seconds": 21.0,
+      "llm_extraction_time_seconds": 3.2,
+      "total_time_seconds": 24.2,
+      "transcript_en": "Hello, am I speaking with Mr. ABC? I am Doctor Sharma speaking. Yes, yes Doctor, I am ABC speaking. Sorry, I have a severe sore throat. Good morning. Good morning ABC, what is your problem today? What is happening? I have a fever, along with a cough, and my whole body aches. I feel very tired, and feel very weak. All this started about three days ago. Good day. Was the fever higher from the beginning? No, it was mild in the beginning, but it suddenly increased yesterday evening. It went up to about 101 degrees Fahrenheit. I took 650 mg of paracetamol for it. I took it twice yesterday. Good, 650 paracetamol taken twice. Did you get relief from it? Yes, the fever subsided for a few hours, but then it came back. I measured the temperature just before you called. Because this is a teleconsultation and I have a thermometer at home. Currently, my temperature is 100.8 degrees Fahrenheit. 100.8 degrees Fahrenheit. Good that you checked. Do you also have a BP machine, pulse oximeter, or weight measuring machine? Yes, I checked everything. My weight is 74 kilograms. Oxygen saturation is 98%. Pulse is 92 per minute and blood pressure is 132/80. It is 84 mmHg. 132/84. Do you already have high blood pressure, diabetes, asthma, or any other illness? Yes, I have high blood pressure. I had a diagnosis about five years ago. I take Amlodipine 5mg once a day for it, but I don't have any problems with asthma or thyroid, and there is no history of any surgery or hospital admission. Okay, continue with Amlodipine. Now tell me about cough. Is it a cough or is there phlegm? Mostly it is a dry cough. Sometimes there is a little phlegm but not much. But there is one thing to worry about, when I climb stairs, I get a little breathless. Does it cause chest pain with it? No, there is no chest pain. Is there a lot of breathing difficulty with wheezing? No, I only get a little breathless while climbing stairs. Is the smell or taste gone? Vomiting, diarrhea? No doctor, nothing like that. There is no stomach pain either. And there is no burning sensation while urinating. Yes, I wanted to say one thing. A colleague from my office had a viral fever last week, so I definitely came into contact with a sick person. Okay, this information is important. Does anyone in your family have diabetes, high blood pressure, heart disease, or asthma? My father has diabetes, and my mother also has high blood pressure like me. Okay, do you have any allergies to medicine or food? Yes, I am allergic to penicillin. I have an allergy. Taking penicillin causes skin rashes on my skin. Thank you for the information. I will not prescribe penicillin-based medicines. Right now, you can comfortably speak in full sentences. Do you currently feel swelling in your body, skin rashes, or severe weakness? No, nothing like that. Okay, from your words, it seems that you are fully conscious, aware of time and place, have a mild fever, and do not have severe difficulty in breathing. No. The respiratory system feels a mild infection in the upper respiratory tract. There are no worrying symptoms related to the heart, stomach, or nervous system. The current primary diagnosis is acute viral upper respiratory tract infection, which is a throat infection with a viral fever. Okay, so should I get a COVID test or a chest X-ray? Currently, your oxygen level is 98% and the symptoms are mild, so let's start treatment first. If after the next 48 hours But if the fever persists or symptoms increase, get it checked. Which check? Complete blood count, CBC, C-reactive protein CRP, if needed, COVID-19 or influenza test, and if the breathing increases, chest X-ray. Okay, I will get it done only if the problem increases. Which medicine should I take now? Should I take more paracetamol? Yes, I will write down paracetamol 650 mg for you. If the fever is more than 100 degrees Fahrenheit, take one tablet every six hours. Keep taking at least four pills a day, along with your Amlodipine 5mg once a day. Okay, paracetamol and Amlodipine, what about for cough and throat? I am also writing Levocetirizine 5mg. Take it once a night for five consecutive days. For the throat, gargle with warm salt water three to four times a day and take steam inhalation twice a day. Steam inhalation twice a day, okay. Drink enough water, get enough rest, and be soft and nutritious. Take food. Wear a mask when you are around family members so that the infection does not spread. Okay. Now listen carefully. If you have severe difficulty breathing, have a fever of more than 102 degrees Fahrenheit, oxygen saturation goes below 94%, have a lot of pain in the chest, or have confusion, then immediately go to the nearest emergency department. If the oxygen goes below 94% or the fever is more than 102 degrees Fahrenheit, then immediately go to the hospital. Okay doctor, I will follow all your instructions. I am asking you to show again after three days, if the symptoms increase early, then contact early. Keep noting your temperature and oxygen saturation twice a day. I will note twice a day. Thank you very much doctor. You are welcome ABC. Rest and good luck in recovering soon. Thank you doctor, goodbye. Goodbye.",
+      "clinical_extraction": {
+        "chief_complaint": {
+          "text": "Severe sore throat with fever, cough and body ache",
+          "items": [
+            "Sore throat",
+            "Fever",
+            "Cough",
+            "Body ache"
+          ],
+          "suggestions": [
+            "Consider documenting symptom duration more precisely"
+          ],
+          "confidence": 0.8
+        },
+        "history_of_present_illness": {
+          "text": "Symptoms started 3 days ago with mild fever, which increased to 101°F yesterday evening. Took 650mg paracetamol twice, which provided temporary relief.",
+          "items": [
+            "Fever started 3 days ago",
+            "Fever increased to 101°F",
+            "Took paracetamol"
+          ],
+          "suggestions": [
+            "Consider recording severity of symptoms"
+          ],
+          "confidence": 0.8
+        },
+        "past_history": {
+          "text": "Hypertension diagnosed 5 years ago, on Amlodipine 5mg once daily",
+          "items": [
+            "Hypertension",
+            "Amlodipine 5mg once daily"
+          ],
+          "suggestions": [],
+          "confidence": 0.8
+        },
+        "family_history": {
+          "text": "Father has diabetes, mother has hypertension",
+          "items": [
+            "Father - diabetes",
+            "Mother - hypertension"
+          ],
+          "suggestions": [],
+          "confidence": 0.8
+        },
+        "drug_allergy": {
+          "text": "Allergic to penicillin, causes skin rashes",
+          "items": [
+            "Penicillin allergy"
+          ],
+          "suggestions": [],
+          "confidence": 0.8
+        },
+        "clinical_examination": {
+          "text": "Temperature 100.8°F, Pulse 92/min, BP 132/84 mmHg, SpO2 98%, mild dry cough, breathlessness on exertion",
+          "items": [
+            "Mild dry cough",
+            "Breathlessness on exertion"
+          ],
+          "suggestions": [
+            "Consider documenting more detailed examination findings"
+          ],
+          "confidence": 0.6,
+          "vitals": [
+            {
+              "label": "Temperature",
+              "value": "100.8",
+              "unit": "°F"
+            },
+            {
+              "label": "Pulse",
+              "value": "92",
+              "unit": "/min"
+            },
+            {
+              "label": "BP",
+              "value": "132/84",
+              "unit": "mmHg"
+            },
+            {
+              "label": "SpO2",
+              "value": "98",
+              "unit": "%"
+            }
+          ],
+          "general_examination": "No swelling, skin rashes or severe weakness",
+          "systemic_examination": "Mild infection in upper respiratory tract, no worrying symptoms related to heart, stomach or nervous system"
+        },
+        "diagnosis": {
+          "text": "Acute viral upper respiratory tract infection",
+          "items": [
+            "Acute viral upper respiratory tract infection"
+          ],
+          "suggestions": [],
+          "confidence": 0.8,
+          "icd10": []
+        },
+        "investigations": {
+          "text": "May need CBC, CRP, COVID-19 or influenza test, and chest X-ray if symptoms worsen",
+          "items": [
+            "CBC",
+            "CRP",
+            "COVID-19 test",
+            "Influenza test",
+            "Chest X-ray"
+          ],
+          "suggestions": [],
+          "confidence": 0.6
+        },
+        "prescription": {
+          "text": "Paracetamol 650mg for fever, Amlodipine 5mg once daily, Levocetirizine 5mg once nightly for 5 days",
+          "items": [
+            "Paracetamol",
+            "Amlodipine",
+            "Levocetirizine"
+          ],
+          "suggestions": [
+            "Consider documenting potential side effects of medications"
+          ],
+          "confidence": 0.8,
+          "medications": [
+            {
+              "medicine": "Paracetamol",
+              "dose": "650mg",
+              "route": "",
+              "frequency": "every 6 hours if fever > 100°F",
+              "duration": "",
+              "remarks": ""
+            },
+            {
+              "medicine": "Amlodipine",
+              "dose": "5mg",
+              "route": "",
+              "frequency": "once daily",
+              "duration": "",
+              "remarks": ""
+            },
+            {
+              "medicine": "Levocetirizine",
+              "dose": "5mg",
+              "route": "",
+              "frequency": "once nightly",
+              "duration": "5 days",
+              "remarks": ""
+            }
+          ]
+        },
+        "advice": {
+          "text": "Rest, drink enough water, eat nutritious food, wear mask, gargle with warm salt water, steam inhalation twice daily",
+          "items": [
+            "Rest",
+            "Drink enough water",
+            "Eat nutritious food",
+            "Wear mask",
+            "Gargle with warm salt water",
+            "Steam inhalation"
+          ],
+          "suggestions": [],
+          "confidence": 0.8
+        },
+        "follow_up": {
+          "text": "Follow up after 3 days, or earlier if symptoms worsen",
+          "items": [],
+          "suggestions": [],
+          "confidence": 0.8,
+          "date_text": "After 3 days",
+          "instruction": "Follow up after 3 days, or earlier if symptoms worsen"
+        },
+        "drug_interactions": []
+      },
+      "judge_scores": {
+        "medical_accuracy": 8,
+        "completeness": 7,
+        "coherence": 9,
+        "ground_truth_match": 7,
+        "notes": "The candidate JSON generally captures the main clinical points, but sometimes lacks detail or specificity found in the ground truth, such as the full range of symptoms, detailed examination findings, and complete medication instructions."
+      }
+    },
+    "deepgram": {
+      "stt_model": "nova-3 (general, language=gu, native transcript, no built-in translate)",
+      "stt_time_seconds": 42.7,
+      "llm_extraction_time_seconds": 3.3,
+      "total_time_seconds": 46.0,
+      "transcript_gu_native": "હા હા ડોક્ટર. હું એબીસી બોલું છું. માફ કરશો ગળામાં બહુ દુખે છે. સુપ્રભાત સુપ્રભાત એબીસી આજે તમને શું તકલીફ છે? શું થઈ રહ્યું છે? મને તાવ છે સાથે ઉધરસપણ છે અને આખા શરીરમાં દુખાવો થાય છે. ખૂબ જ થાક લાગે છે. એકદમ નબળાઈ લાગે છે. આ બધું લગભગ ત્રણ દિવસ પહેલા શરૂ થયું. ત્રણ દિવસ સારું શરૂઆતથી જ તાવ વધારે હતો. ના શરૂઆતમાં હળવો હતો પણ ગઈકાલે સાંજે અચાનક વધી ગયો. લગભગ 11ડિગ્રી ફે° સુધી ગયો. મેં તેના માટે પેરાસિટામોલ 650 લીધી હતી ગઈ કાલે બે વખત લીધી સારું પેરાસિટામોલ 650 બે વખત લીધી તેનાથી રાહત મળી થોડા કલાક માટે તાવ ઉતરી ગયો હતો પણ પછી ફરી આવી ગયો. હમણાં જ તમે ફોન કર્યો તે પહેલા મેં તાપમાનમાં આપ્યું હતું કારણ કે આ ટેલી કન્સલ્ટેશન છે અને મારી પાસે ઘરે થર્મોમીટર છે. અત્યારે મારું તાપમાન 101ડિગ્રી ડેફિનેટલી. 0.8ડિગ્રી ડેફિનેટલી. સારું કર્યું કે તમે ચેક કર્યું. તમારી પાસે બીપી મશીન પલ્સ ઓક્સિમીટર અથવા વજન માપવાનું મશીન પણ છે? હા મેં બધું ચેક કર્યું મારું વજન 247 kg છે. ઓક્સિજન સિચ્યુએશન 98% છે. પલ્સ 92 પ્રતિ મિનિટ છે અને બ્લડ પ્રેશર 132 84 mmજી છે. 132 84 શું તમને પહેલાથી હાઈ બ્લડ પ્રેશર ડાયાબિટીસ અસ્થમા કે બીજી કોઈ બીમારી છે હા, મને હાઈ બ્લડ પ્રેશર છે. લગભગ 5 વર્ષ પહેલા નિદાન થયું હતું. હું તેના માટે એમોડીપીિન 5 g રોજ એક વખત લઉં છું. પણ મને અસ્થમા કે થાયરોઈડની કોઈ સમસ્યા નથી અને કોઈ સર્જરી કે હોસ્પિટલમાં દાખલ થવાનો ઇતિહાસ પણ નથી. સારું. એમોડીપીિન ચાલુ રાખજો. હવે ઉધરસ વિશે કહો સૂકી ઉધરસ છે કે કફ પણ આવે છે મોટાભાગે સૂકી ઉધરસ છે ક્યારેક થોડો કફ આવે છે પણ બહુ નથી પણ એક વાતની ચિંતા છે જ્યારે હું સીડીઓ ચડું છું ત્યારે થોડો શ્વાસ ચડે છે. તેની સાથે છાતીમાં દુખાવો થાય છે? ના છાતીમાં દુખાવો નથી. ઘર ઘર અટકે ખૂબ વધારે શ્વાસ ચડવાની તકલીફ? ના ફક્ત સીડીઓ ચડતી વખતે થોડો શ્વાસ ચડે છે. સુગંધ કે સ્વાદ જતો રહ્યો છે? ઉલટી જાડા ના ડોક્ટર એવું કંઈ નથી પેટમાં દુખાવો પણ નથી અને પેશાબ કરતી વખતે બળતરા પણ નથી એક વાત કહેવી હતી મારા ઓફિસના એક સહ કર્મચારીને ગયા અઠવાડિયે વાયરલતા વાવ્યો હતો એટલે હું ચોક્કસ પડે બીમાર વ્યક્તિના સંપર્કમાં આવ્યો હતો. સારું આ માહિતી મહત્વની છે તમારા પરિવારમાં કોઈને ડાયાબિટીસ હાઈ બ્લડ પ્રેશર હૃદય રોગ કે અસ્તમાં છે મારા પિતાને ડાયાબિટીસ છે અને મારી માતાને પણ મારી જેમ હાઈ બ્લડ પ્રેશર છે. સારું તમને કોઈ દવા કે ખોરાકની એલર્જી છે હા, પેન્સિલિનથી એલર્જી છે, પેન્સિલિન લેવાથી મને ત્વચા પર ચામડીના ચકામાં સ્કીનરાજ થઈ જાય છે. માહિતી આપવા બદલ આભાર પેન્સિલીના આધારિત દવાઓ નહીં લખું. અત્યારે તમે આરામથી પૂરા વાક્યમાં વાત કરી શકો છો. તમને અત્યારે શરીરમાં સોજો ચામડી પર ચકામાં કે ખૂબ નબળાઈ લાગે છે? ના એવું કંઈ નથી. સારું તમારી વાત પરથી લાગે છે કે તમે સંપૂર્ણ ભાનમાં છો સમય અને સ્થળની સમજ છે. હળવો તાવ છે અને શ્વાસ લેવામાં ગંભીર તકલીફ નથી. શ્વસનતંત્રમાં ઉપરના શ્વસન માર્કનું હળવું ઇન્ફેક્શન લાગે છે. હૃદય પેટ કે નર્વસ સિસ્ટમ સંબંધિત કોઈ ચિંતાજનક લક્ષણો નથી. હાલનો પ્રાથમિક નિદાન એક્યુટ વાયરલ અપર રેસ્પિરેટરી ટ્રેક ઇન્ફેક્શન એટલે કે વાયરલ તાવ સાથે ગળાનો ચેપ છે. સારો તો શું મને કોવિડ ટેસ્ટ કે ચેસ્ટ એક્સરે કરાવો જોઈએ? હાલમાં તમારું ઓક્સિજન લેવલ 98% છે અને લક્ષણો હળવા છે એટલે પહેલા સારા શરૂ કરીએ. જો આગામી 48 કલાક પછી પણ તાવ ચાલુ રહે અથવા લક્ષણો વધી જાય તો તપાસ કરાવી કઈ તપાસ કમ્પ્લીટ બ્લડ કાઉન્ટ સીbc સીરી એક્ટિવ પ્રોટીન સીઆરપીએફ જરૂર હોય તો કોવિડ 19 અથવા ઇન્ફ્લુએન્સર અને જો શ્વાસ વધુ ચડવા લાગે તો ચેસ એક્સરે સારું જો તકલીફ વધે તો જ કરાવીશ અત્યારે કઈ દવા લઉં પેરાસિટામોલ વધુ લઉં હા હું તમને પેરાસિટામોલ 650 લખી આપું છું જો તાવ 200 ડિગ્રી કરતા વધુ હોય ત્યારે દર 6 કલાકે એક ગોળી લેવી દિવસમાં વધુમાં વધુ ચાર ગોળી સાથે તમારું એમોડીપીિન 5 g રોજ એક વખત ચાલુ રાખવું સારું પેરાસેટામોલ અને એમોડીપીિન ઉધરસ અને ગળા માટે કઈ? લીવોસિટી રીઝન 5 g પણ લખું છું. રાત્રે એક વખત સતત પાંચ દિવસ લેવી ગળા માટે દિવસમાં ત્રણ થી ચાર વખત ગરમ મીઠાના પાણીથી કોગળા કરવા અને દિવસમાં બે વખત વરાળ એટલે કે સ્ટીમ ઇહેલેશન લેવી. દિવસમાં બે વખત વરાળ બરાબર. પૂરતું પાણી પીવું પૂરતો આરામ કરવો અને નરમ તથા પોસ્ટિક ખોરાક લેવો. પરિવારના સભ્યોની આસપાસ હો ત્યારે માસ્ક પહેરવું જેથી ચેપના ફેલાય. બરાબર હવે ધ્યાનથી સાંભળો જો તમને શ્વાસ લેવામાં ગંભીર તકલીફ થાય સતત 101 ડિગ્રી ફેણ કરતા વધુ તાવ રહે ઓક્સિજન સેચ્યુરેશન 94% થી નીચે જાય છાતીમાં ખૂબ દુખાવો થાય અથવા ગૂચવણ એટલે કે કન્ફ્યુઝન થાય તો તરત નજીકના ઇમર્જન્સી વિભાગમાં જવું ઓક્સિજન 94% થી નીચે જાય અથવા તાવ 109 ડિગ્રી ફેનથી વધુ હોય તો તરત હોસ્પિટલ જવું બરાબર ડોક્ટર હું તમારી બધી સૂચનાઓનું પાલન કરીશ તમને ત્રણ દિવસ પછી ફરી બતાવવા કહું છું. જો લક્ષણો પહેલા જ વધી જાય તો વહેલા સંપર્ક કરજો. દિવસમાં બે વખત તમારું તાપમાન અને ઓક્સિજન સેચ્યુરેશન નોંધતા રહેજો. દિવસમાં બે વખત નોંધ રાખીશ ખૂબ ખૂબ આભાર ડોક્ટર તમારું સ્વાગત છે એબીસી. આરામ કરજો અને જલ્દી સાજા થાવ તેવી શુભેચ્છા આભાર ડોક્ટર આવજો આવજો",
+      "clinical_extraction": {
+        "chief_complaint": {
+          "text": "Fever, cough, body ache, and sore throat for 3 days",
+          "items": [
+            "Fever",
+            "cough",
+            "body ache",
+            "sore throat for 3 days"
+          ],
+          "suggestions": [
+            "Consider documenting symptom severity",
+            "Consider recording temperature and oxygen saturation more frequently"
+          ],
+          "confidence": 0.8
+        },
+        "history_of_present_illness": {
+          "text": "Patient has been experiencing fever, cough, body ache, and sore throat for 3 days, with symptoms worsening over time",
+          "items": [
+            "Fever for 3 days",
+            "Cough",
+            "Body ache",
+            "Sore throat"
+          ],
+          "suggestions": [
+            "Consider asking about recent travel history",
+            "Consider asking about exposure to anyone with similar symptoms"
+          ],
+          "confidence": 0.8
+        },
+        "past_history": {
+          "text": "Patient has hypertension, diagnosed 5 years ago, and is taking Amlodipine 5 mg daily",
+          "items": [
+            "Hypertension"
+          ],
+          "suggestions": [
+            "Consider asking about medication adherence",
+            "Consider asking about any changes in medication regimen"
+          ],
+          "confidence": 0.8
+        },
+        "family_history": {
+          "text": "Patient's father has diabetes, and patient's mother has hypertension",
+          "items": [
+            "Father has diabetes",
+            "Mother has hypertension"
+          ],
+          "suggestions": [
+            "Consider asking about other family members with medical conditions"
+          ],
+          "confidence": 0.8
+        },
+        "drug_allergy": {
+          "text": "Patient is allergic to penicillin",
+          "items": [
+            "Penicillin allergy"
+          ],
+          "suggestions": [
+            "Consider asking about other medication allergies"
+          ],
+          "confidence": 0.8
+        },
+        "clinical_examination": {
+          "text": "Patient's temperature is 101.8°F, oxygen saturation is 98%, pulse is 92/min, and blood pressure is 132/84 mmHg",
+          "items": [],
+          "suggestions": [
+            "Consider recording vital signs more frequently"
+          ],
+          "confidence": 0.8,
+          "vitals": [
+            {
+              "label": "Temperature",
+              "value": "101.8",
+              "unit": "°F"
+            },
+            {
+              "label": "Oxygen Saturation",
+              "value": "98",
+              "unit": "%"
+            },
+            {
+              "label": "Pulse",
+              "value": "92",
+              "unit": "/min"
+            },
+            {
+              "label": "Blood Pressure",
+              "value": "132/84",
+              "unit": "mmHg"
+            }
+          ],
+          "general_examination": "",
+          "systemic_examination": ""
+        },
+        "diagnosis": {
+          "text": "Acute viral upper respiratory tract infection",
+          "items": [],
+          "suggestions": [
+            "Consider ordering laboratory tests to rule out other conditions"
+          ],
+          "confidence": 0.6,
+          "icd10": []
+        },
+        "investigations": {
+          "text": "No investigations ordered at this time",
+          "items": [
+            "No investigations at this time"
+          ],
+          "suggestions": [
+            "Consider ordering CBC, CRP, and other laboratory tests if symptoms worsen"
+          ],
+          "confidence": 0.4
+        },
+        "prescription": {
+          "text": "Patient is prescribed Paracetamol 650 mg every 6 hours, and Amlodipine 5 mg daily",
+          "items": [],
+          "suggestions": [
+            "Consider prescribing medication for cough and sore throat"
+          ],
+          "confidence": 0.8,
+          "medications": [
+            {
+              "medicine": "Paracetamol",
+              "dose": "650 mg",
+              "route": "",
+              "frequency": "every 6 hours",
+              "duration": "",
+              "remarks": ""
+            },
+            {
+              "medicine": "Amlodipine",
+              "dose": "5 mg",
+              "route": "",
+              "frequency": "daily",
+              "duration": "",
+              "remarks": ""
+            }
+          ]
+        },
+        "advice": {
+          "text": "Patient is advised to rest, drink plenty of fluids, and eat a soft diet",
+          "items": [
+            "Rest",
+            "Plenty of fluids",
+            "Soft diet"
+          ],
+          "suggestions": [
+            "Consider advising patient to avoid close contact with others"
+          ],
+          "confidence": 0.8
+        },
+        "follow_up": {
+          "text": "Patient is advised to follow up in 3 days, and to contact the doctor if symptoms worsen",
+          "items": [],
+          "suggestions": [
+            "Consider scheduling a follow-up appointment"
+          ],
+          "confidence": 0.8,
+          "date_text": "3 days",
+          "instruction": "Follow up in 3 days"
+        },
+        "drug_interactions": []
+      },
+      "judge_scores": {
+        "medical_accuracy": 8,
+        "completeness": 6,
+        "coherence": 9,
+        "ground_truth_match": 6,
+        "notes": "Candidate misses details like symptom duration, recent contact with a sick colleague, and specific medication instructions, but captures major clinical points and has clear, readable text."
+      }
+    }
+  },
+  "ground_truth": {
+    "chief_complaint": {
+      "text": "Fever, cough, body pain, sore throat, and fatigue for 3 days.",
+      "items": [
+        "Fever for 3 days",
+        "Cough for 3 days",
+        "Body pain for 3 days",
+        "Sore throat",
+        "Fatigue"
+      ],
+      "suggestions": []
+    },
+    "history_of_present_illness": {
+      "text": "Fever started 3 days ago, initially mild but increased to 101 °F yesterday evening. Took Paracetamol 650 mg twice yesterday which provided temporary relief. Cough is mostly dry with occasional mucus. Patient reports slight breathlessness when climbing stairs but denies chest pain, wheezing, and severe shortness of breath. Denies loss of smell or taste, vomiting, diarrhea, abdominal pain, and burning during urination. Patient was in contact with a sick office colleague (viral fever) last week.",
+      "items": [
+        "Fever started 3 days ago, peaking at 101 °F yesterday evening",
+        "Paracetamol 650 mg taken twice yesterday provided temporary relief",
+        "Mostly dry cough with occasional mucus",
+        "Slight breathlessness when climbing stairs",
+        "Denies chest pain, wheezing, and severe shortness of breath",
+        "Denies loss of smell, taste, vomiting, and diarrhea",
+        "Denies abdominal pain and burning during urination",
+        "Recent contact with sick office colleague (viral fever) last week"
+      ],
+      "suggestions": []
+    },
+    "past_history": {
+      "text": "Hypertension diagnosed 5 years ago. No history of diabetes, asthma, thyroid disease, previous hospital admissions, or surgeries.",
+      "items": [
+        "Hypertension diagnosed 5 years ago",
+        "No history of diabetes, asthma, or thyroid disease",
+        "No previous surgeries or hospital admissions"
+      ],
+      "suggestions": []
+    },
+    "family_history": {
+      "text": "Father has diabetes. Mother has hypertension.",
+      "items": [
+        "Father: Diabetes",
+        "Mother: Hypertension"
+      ],
+      "suggestions": []
+    },
+    "drug_allergy": {
+      "text": "Allergic to Penicillin (develops a skin rash).",
+      "items": [
+        "Penicillin (causes skin rash)"
+      ],
+      "suggestions": []
+    },
+    "clinical_examination": {
+      "text": "Patient is conscious, oriented, mildly febrile, and not in respiratory distress. Speaking comfortably in full sentences. No swelling, skin rashes, or severe weakness. Respiratory system is mildly affected. No concerning cardiac, abdominal, or neurological symptoms.",
+      "items": [
+        "Conscious and oriented",
+        "Mildly febrile",
+        "Speaking comfortably in full sentences",
+        "No respiratory distress",
+        "No swelling, skin rashes, or severe weakness",
+        "Respiratory system mildly affected"
+      ],
+      "vitals": [
+        {
+          "label": "Temperature",
+          "value": "100.8",
+          "unit": "°F"
+        },
+        {
+          "label": "Blood Pressure",
+          "value": "132/84",
+          "unit": "mmHg"
+        },
+        {
+          "label": "Pulse",
+          "value": "92",
+          "unit": "/min"
+        },
+        {
+          "label": "SpO2",
+          "value": "98",
+          "unit": "%"
+        },
+        {
+          "label": "Weight",
+          "value": "74",
+          "unit": "kg"
+        }
+      ],
+      "general_examination": "Patient appears conscious, oriented, mildly febrile. Speaking comfortably in full sentences. No swelling, skin rashes, or severe weakness.",
+      "systemic_examination": "Not in respiratory distress. Respiratory system appears mildly affected. No concerning cardiac, abdominal, or neurological symptoms.",
+      "suggestions": []
+    },
+    "diagnosis": {
+      "text": "Acute Viral Upper Respiratory Tract Infection (Viral fever with pharyngitis).",
+      "items": [
+        "Acute Viral Upper Respiratory Tract Infection",
+        "Viral fever with pharyngitis"
+      ],
+      "icd10": [],
+      "suggestions": [
+        "Consider adding specific ICD-10 codes for Acute Viral Upper Respiratory Tract Infection and Acute Pharyngitis if clinically appropriate."
+      ]
+    },
+    "investigations": {
+      "text": "If fever continues beyond 48 hours or symptoms worsen: Complete Blood Count (CBC), C-Reactive Protein (CRP), COVID-19 or Influenza test if indicated, and Chest X-ray if breathlessness increases.",
+      "items": [
+        "Complete Blood Count (CBC) if fever > 48 hrs or worsens",
+        "C-Reactive Protein (CRP) if fever > 48 hrs or worsens",
+        "COVID-19 or Influenza test if indicated",
+        "Chest X-ray if breathlessness increases"
+      ],
+      "suggestions": []
+    },
+    "prescription": {
+      "text": "Paracetamol 650 mg every 6 hours if fever exceeds 100 °F (maximum 4 tablets/day). Levocetirizine 5 mg once daily at night for 5 days. Continue Amlodipine 5 mg once daily. Warm saline gargles 3-4 times daily and steam inhalation twice daily.",
+      "items": [
+        "Tablet Paracetamol 650 mg: 1 tablet every 6 hours if fever > 100 °F (max 4 tablets/day)",
+        "Tablet Levocetirizine 5 mg: 1 tablet once daily at night for 5 days",
+        "Tablet Amlodipine 5 mg: 1 tablet once daily (continue for blood pressure)",
+        "Warm saline gargles: 3-4 times daily",
+        "Steam inhalation: Twice daily"
+      ],
+      "medications": [
+        {
+          "medicine": "Paracetamol",
+          "dose": "650 mg",
+          "route": "",
+          "frequency": "Every 6 hours",
+          "duration": "",
+          "remarks": "Only if fever exceeds 100 °F, maximum 4 tablets per day"
+        },
+        {
+          "medicine": "Levocetirizine",
+          "dose": "5 mg",
+          "route": "",
+          "frequency": "Once daily at night",
+          "duration": "5 days",
+          "remarks": ""
+        },
+        {
+          "medicine": "Amlodipine",
+          "dose": "5 mg",
+          "route": "",
+          "frequency": "Once daily",
+          "duration": "",
+          "remarks": "Continue previous medication for blood pressure"
+        },
+        {
+          "medicine": "Warm saline gargles",
+          "dose": "",
+          "route": "",
+          "frequency": "3 to 4 times daily",
+          "duration": "",
+          "remarks": ""
+        },
+        {
+          "medicine": "Steam inhalation",
+          "dose": "",
+          "route": "",
+          "frequency": "Twice daily",
+          "duration": "",
+          "remarks": ""
+        }
+      ],
+      "suggestions": [
+        "Medication route not explicitly documented in the transcript.",
+        "Duration for Paracetamol is not specified."
+      ]
+    },
+    "advice": {
+      "text": "Drink plenty of fluids, get adequate rest, and eat soft nutritious food. Wear a mask around family members to reduce transmission. Visit the nearest emergency department immediately if experiencing difficulty breathing, persistent high fever above 102 °F, oxygen saturation below 94%, severe chest pain, or confusion.",
+      "items": [
+        "Drink plenty of fluids",
+        "Get adequate rest",
+        "Eat soft nutritious food",
+        "Wear a mask around family members",
+        "Visit emergency department immediately if difficulty breathing, fever > 102 °F, SpO2 < 94%, severe chest pain, or confusion"
+      ],
+      "suggestions": []
+    },
+    "follow_up": {
+      "text": "Review after 3 days or earlier if symptoms worsen. Keep a record of temperature and oxygen saturation twice daily.",
+      "items": [
+        "Review after 3 days, or earlier if symptoms worsen",
+        "Keep a record of temperature and oxygen saturation twice daily"
+      ],
+      "date_text": "After 3 days or earlier if symptoms worsen",
+      "instruction": "Keep a record of temperature and oxygen saturation twice daily.",
+      "suggestions": []
+    }
+  }
+}
