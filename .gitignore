@@ -1,0 +1,33 @@
+# Secrets / local config
+.env
+AI_backend/.env
+web/config/smtp-config.php
+
+# Local database (created on first request by web/includes/core/db.php)
+web/data/hims.sqlite
+web/data/hims.sqlite-*
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+AI_backend/.logs/
+AI_backend/.results/
+AI_backend/results/
+
+# Run artefacts
+*.log
+*.wav
+*.mp3
+*.mpeg
+*.bin
+/models/
+stream_result_*.json
+intake_result_*.json
+dynamic_intake_result_*.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
