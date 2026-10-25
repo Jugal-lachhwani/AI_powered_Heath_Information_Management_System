@@ -31,3 +31,6 @@ dynamic_intake_result_*.json
 .DS_Store
 .idea/
 .vscode/
+
+# Personal working notes
+docs/notes/
