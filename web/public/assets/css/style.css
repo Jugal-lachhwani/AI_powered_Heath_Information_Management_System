@@ -1,0 +1,556 @@
+/* ==========================================================================
+   AI Voice Consultation Module — Theme + Component Styles
+   ========================================================================== */
+
+:root,
+:root[data-theme="light"] {
+  --bg: #F3F8F8;
+  --surface: #FFFFFF;
+  --surface-2: #F6FAFB;
+  --border: #D6E5E7;
+  --text: #132B38;
+  --text-muted: #58727D;
+  --primary: #116D7E;
+  --primary-dark: #0D5666;
+  --primary-soft: #E4F3F4;
+  --accent-green: #10845F;
+  --accent-green-bg: #E6F7F1;
+  --accent-amber: #A96913;
+  --accent-amber-bg: #FFF4E4;
+  --accent-red: #B72E3C;
+  --accent-red-bg: #FDEDEF;
+  --clinical-navy: #183B56;
+  --clinical-teal: #0E8D84;
+  --clinical-sky: #DDF2F8;
+  --clinical-lilac: #EEF0FF;
+  --clinical-shadow: rgba(19, 43, 56, .085);
+  --ring: rgba(17, 109, 126, .24);
+}
+
+:root[data-theme="dark"] {
+  --bg: #0E171B;
+  --surface: #15232A;
+  --surface-2: #1B2D35;
+  --border: #29434D;
+  --text: #EDF7F8;
+  --text-muted: #9CB9C1;
+  --primary: #3BC4C8;
+  --primary-dark: #16A3AA;
+  --primary-soft: rgba(59, 196, 200, .12);
+  --accent-green: #58D39A;
+  --accent-green-bg: rgba(88, 211, 154, .13);
+  --accent-amber: #F0B75D;
+  --accent-amber-bg: rgba(240, 183, 93, .13);
+  --accent-red: #F08B96;
+  --accent-red-bg: rgba(240, 139, 150, .13);
+  --clinical-navy: #223D52;
+  --clinical-teal: #38CDC2;
+  --clinical-sky: rgba(59, 196, 200, .16);
+  --clinical-lilac: rgba(139, 145, 245, .13);
+  --clinical-shadow: rgba(0, 0, 0, .26);
+  --ring: rgba(59, 196, 200, .28);
+}
+
+* { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+html { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+body { letter-spacing: .002em; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--ring); outline-offset: 2px;
+}
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+::selection { background: var(--primary); color: #fff; }
+
+.skip-link {
+  /* Keep this accessiblity link out of the flex layout until a keyboard user needs it. */
+  position: absolute; top: 0; left: 0; z-index: 100;
+  display: inline-flex; align-self: flex-start; width: max-content; max-width: calc(100% - 1rem);
+  transform: translateX(-110%);
+  background: var(--primary); color: #fff; padding: .6rem 1rem; border-radius: 0 0 .5rem 0;
+}
+.skip-link:focus-visible { transform: translateX(0); }
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: .875rem;
+  box-shadow: 0 1px 2px rgba(19, 43, 56, .04), 0 10px 24px -18px var(--clinical-shadow);
+}
+
+.auth-shell {
+  background-image: radial-gradient(circle at 50% -20%, color-mix(in srgb, var(--primary) 11%, transparent), transparent 38rem);
+}
+.auth-shell .card { max-width: 28rem; border-top: 3px solid var(--primary); box-shadow: 0 18px 45px rgba(23, 43, 77, .09); }
+.app-shell > header, .consultation-shell > header { box-shadow: 0 1px 0 rgba(19, 43, 56, .04); }
+.app-shell main, .consultation-shell main { padding-bottom: 1.75rem; }
+
+/* ---------- Consultation workspace ---------- */
+.consultation-shell {
+  position: relative;
+  background: var(--bg);
+}
+.consultation-shell::before {
+  /* Disable the old decorative hero block: it appears as a teal bar above the header. */
+  content: none;
+  display: none;
+}
+.consultation-shell > * { position: relative; }
+.consultation-header { border-bottom-color: color-mix(in srgb, var(--border) 82%, transparent); }
+.consultation-header > div > div { min-height: 4.35rem; }
+.consultation-header [class*="rounded-full"] { border: 1px solid color-mix(in srgb, var(--border) 85%, transparent); }
+.clinical-brand-mark {
+  background: linear-gradient(135deg, var(--clinical-navy), var(--clinical-teal));
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--clinical-teal) 22%, transparent);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.clinical-brand:hover .clinical-brand-mark { transform: translateY(-1px); }
+.clinical-patient-chip {
+  padding: .28rem .55rem .28rem .3rem;
+  border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+  border-radius: .8rem;
+  background: color-mix(in srgb, var(--surface) 76%, var(--primary-soft));
+}
+.patient-avatar {
+  background: linear-gradient(135deg, var(--primary-soft), var(--clinical-sky));
+  color: var(--primary);
+}
+.clinical-meta-group {
+  padding-left: .85rem;
+  border-left: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
+}
+.clinical-panel-icon {
+  width: 1.65rem;
+  height: 1.65rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .55rem;
+  background: var(--primary-soft);
+  color: var(--primary);
+  border: 1px solid color-mix(in srgb, var(--primary) 16%, transparent);
+  flex-shrink: 0;
+}
+.consultation-workspace {
+  width: 100%;
+  max-width: 1720px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 0;
+}
+.consultation-workspace > .panel { min-width: 0; }
+.consultation-recorder > .card:first-child { border-top: 3px solid var(--primary); }
+.consultation-recorder #mic-btn { box-shadow: 0 10px 26px color-mix(in srgb, var(--primary) 28%, transparent); }
+.consultation-recorder #rec-timer { letter-spacing: -.04em; }
+.recorder-card {
+  position: relative;
+  overflow: hidden;
+}
+.recorder-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5.5rem;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--primary-soft) 74%, transparent), color-mix(in srgb, var(--clinical-lilac) 54%, transparent));
+  pointer-events: none;
+}
+.recorder-card > * { position: relative; }
+.recorder-illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  min-height: 2.4rem;
+  margin: .15rem 0 1rem;
+  color: var(--primary);
+}
+.recorder-illustration-icon {
+  width: 2.15rem;
+  height: 2.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .7rem;
+  background: color-mix(in srgb, var(--surface) 72%, var(--primary-soft));
+  border: 1px solid color-mix(in srgb, var(--primary) 16%, var(--border));
+}
+.recorder-illustration-line {
+  width: min(8rem, 42%);
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+}
+.mic-stage::before {
+  content: '';
+  position: absolute;
+  inset: -.65rem;
+  border-radius: 50%;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent 48%, color-mix(in srgb, var(--primary) 12%, transparent) 49% 51%, transparent 52%),
+    linear-gradient(180deg, transparent 48%, color-mix(in srgb, var(--primary) 12%, transparent) 49% 51%, transparent 52%);
+}
+.mic-stage > * { position: relative; }
+.consultation-section-heading {
+  min-height: 2.5rem; padding: .35rem .25rem;
+  border-bottom: 1px solid var(--border);
+}
+.consultation-section-heading h2 { letter-spacing: -.01em; }
+.consultation-editor .ai-field { border-radius: .75rem; }
+.consultation-editor .ai-field:focus-within { border-color: color-mix(in srgb, var(--primary) 55%, var(--border)); box-shadow: 0 4px 16px color-mix(in srgb, var(--primary) 8%, transparent); }
+.consultation-editor .field-head { padding-bottom: .15rem; }
+.consultation-assistant > .card:first-child { border-top: 3px solid var(--accent-red); }
+.consultation-assistant .transcript-box { background: linear-gradient(180deg, var(--surface-2), color-mix(in srgb, var(--surface-2) 68%, var(--surface))); }
+.assistant-live-card, .assistant-suggestion-card, .confidence-card { position: relative; overflow: hidden; }
+.assistant-live-card::before, .assistant-suggestion-card::before, .confidence-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--clinical-teal), var(--accent-green));
+}
+.consultation-action-bar { box-shadow: 0 -8px 24px rgba(19, 43, 56, .06); }
+.consultation-action-bar .action-btn-primary { box-shadow: 0 4px 10px color-mix(in srgb, var(--primary) 22%, transparent); }
+.consultation-action-bar .action-btn-cta { margin-left: .5rem; }
+
+@media (min-width: 1024px) {
+  .consultation-shell .consultation-workspace {
+    grid-template-columns: minmax(235px, .9fr) minmax(420px, 1.7fr) minmax(250px, 1fr);
+    gap: 1.25rem;
+    align-items: stretch;
+  }
+  .consultation-shell .consultation-workspace > .panel { grid-column: auto; }
+  .consultation-recorder, .consultation-assistant { padding-right: .35rem; }
+  .consultation-action-bar > div { max-width: 1720px; }
+}
+
+@media (min-width: 1280px) {
+  .consultation-shell .consultation-workspace {
+    grid-template-columns: minmax(270px, .86fr) minmax(520px, 1.72fr) minmax(290px, .98fr);
+  }
+}
+
+.ai-field {
+  border-left: 3px solid var(--primary);
+  transition: border-color .3s ease;
+}
+.ai-field[data-reviewed="true"] {
+  border-left-color: var(--border);
+}
+.ai-field[data-reviewed="true"] .ai-tag { opacity: 0; transform: translateY(-2px); pointer-events: none; }
+
+.field-head {
+  display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-bottom: .75rem;
+}
+
+.section-num {
+  font-size: 11px; font-weight: 700; color: var(--primary);
+  background: linear-gradient(135deg, var(--primary-soft), color-mix(in srgb, var(--clinical-sky) 64%, var(--surface)));
+  border: 1px solid color-mix(in srgb, var(--primary) 14%, var(--border));
+  border-radius: .55rem; width: 26px; height: 26px;
+  display: inline-flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.ai-tag {
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-size: 11px; font-weight: 600; color: var(--primary);
+  background: color-mix(in srgb, var(--primary-soft) 72%, var(--surface)); border: 1px solid color-mix(in srgb, var(--primary) 16%, var(--border));
+  padding: .25rem .55rem; border-radius: 999px; white-space: nowrap;
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.field-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted); }
+
+/* ---------- Form fields ---------- */
+.field-textarea, .field-input {
+  width: 100%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: .625rem;
+  padding: .7rem .85rem;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text);
+  resize: vertical;
+  transition: border-color .2s ease, box-shadow .2s ease, background-color .3s ease;
+}
+.field-input { min-height: 42px; }
+.field-textarea { min-height: 86px; }
+.field-input::placeholder, .field-textarea::placeholder { color: color-mix(in srgb, var(--text-muted) 72%, transparent); }
+.field-textarea:focus, .field-input:focus {
+  outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--ring); background: var(--surface);
+}
+
+/* ---------- Chips ---------- */
+.chip-list { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: 12.5px; font-weight: 500;
+  padding: .4rem .7rem; border-radius: 999px;
+  background: color-mix(in srgb, var(--surface-2) 76%, var(--primary-soft)); border: 1px solid var(--border); color: var(--text);
+}
+.chip-remove { display: inline-flex; color: var(--text-muted); cursor: pointer; }
+.chip-remove:hover { color: var(--accent-red); }
+
+.chip-selectable, .chip-checkbox {
+  cursor: pointer; transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.chip-selectable svg, .chip-checkbox svg { opacity: .25; }
+.chip-selectable:hover, .chip-checkbox:hover { border-color: var(--primary); }
+.chip-selectable.is-selected, .chip-checkbox.is-selected {
+  background: var(--accent-green-bg); border-color: var(--accent-green); color: var(--accent-green);
+}
+.chip-selectable.is-selected svg, .chip-checkbox.is-selected svg { opacity: 1; }
+
+/* ---------- Vitals ---------- */
+.vital-card {
+  background: linear-gradient(180deg, var(--surface), var(--surface-2)); border: 1px solid var(--border); border-radius: .75rem;
+  padding: .65rem .5rem; text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: .3rem;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, #fff 70%, transparent);
+}
+.vital-card:focus-within { border-color: color-mix(in srgb, var(--primary) 52%, var(--border)); box-shadow: 0 0 0 3px var(--ring); }
+.vital-value {
+  width: 100%; background: transparent; border: none; text-align: center; font-weight: 700; font-size: 15px; color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.vital-value:focus { outline: none; }
+.vital-label { font-size: 10.5px; color: var(--text-muted); }
+
+/* ---------- Prescription table ---------- */
+.rx-table { width: 100%; border-collapse: separate; border-spacing: 0 .4rem; font-size: 13px; min-width: 560px; }
+.rx-table th {
+  text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: .03em;
+  color: var(--text-muted); font-weight: 600; padding: 0 .6rem .3rem;
+}
+.rx-table td { background: var(--surface-2); padding: .3rem .4rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.rx-table td:first-child { border-left: 1px solid var(--border); border-top-left-radius: .6rem; border-bottom-left-radius: .6rem; }
+.rx-table td:last-child { border-right: 1px solid var(--border); border-top-right-radius: .6rem; border-bottom-right-radius: .6rem; }
+.rx-input { width: 100%; background: transparent; border: none; padding: .35rem; color: var(--text); border-radius: .4rem; }
+.rx-input:focus { outline: none; box-shadow: 0 0 0 2px var(--ring); background: var(--surface); }
+.rx-row-remove { color: var(--text-muted); cursor: pointer; padding: .35rem; border-radius: .4rem; }
+.rx-row-remove:hover { color: var(--accent-red); background: var(--accent-red-bg); }
+
+/* ---------- Advice list ---------- */
+.advice-item {
+  display: flex; align-items: flex-start; gap: .6rem; font-size: 13.5px;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: .6rem; padding: .55rem .75rem;
+}
+.advice-item .chip-remove { margin-left: auto; }
+
+/* ---------- Buttons ---------- */
+.btn-secondary {
+  display: inline-flex; align-items: center; justify-content: center; gap: .35rem;
+  background: var(--surface-2); border: 1px solid var(--border); color: var(--text);
+  border-radius: .625rem; font-weight: 600; cursor: pointer; min-height: 40px;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .15s ease;
+}
+.btn-secondary:hover { background: var(--primary-soft); border-color: color-mix(in srgb, var(--primary) 28%, var(--border)); color: var(--primary); }
+.btn-secondary:active { transform: translateY(1px); }
+.btn-secondary:disabled { opacity: .5; cursor: not-allowed; }
+.btn-secondary:disabled:hover { background: var(--surface-2); }
+
+/* ---------- Google Meet connection ---------- */
+.google-meet-connect-card { transition: border-color .2s ease, background-color .2s ease; }
+.google-meet-connect-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .45rem;
+  min-height: 42px; border: 1px solid var(--primary); border-radius: .625rem;
+  background: var(--primary); color: #fff; font-weight: 700; cursor: pointer;
+  box-shadow: 0 6px 14px color-mix(in srgb, var(--primary) 24%, transparent);
+  transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.google-meet-connect-btn::before {
+  content: ''; width: .5rem; height: .5rem; border: 2px solid currentColor;
+  border-radius: 50%; opacity: .9;
+}
+.google-meet-connect-btn:hover { background: var(--primary-dark); border-color: var(--primary-dark); box-shadow: 0 8px 18px color-mix(in srgb, var(--primary) 30%, transparent); }
+.google-meet-connect-btn:active { transform: translateY(1px); }
+.google-meet-connect-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.google-meet-connect-btn[data-state="connecting"] { background: var(--accent-amber); border-color: var(--accent-amber); cursor: wait; box-shadow: none; }
+.google-meet-connect-btn[data-state="connecting"]::before { border-right-color: transparent; animation: google-meet-spin .7s linear infinite; }
+.google-meet-connect-btn[data-state="connected"] { background: var(--accent-green); border-color: var(--accent-green); box-shadow: 0 6px 14px color-mix(in srgb, var(--accent-green) 22%, transparent); }
+.google-meet-connect-btn[data-state="connected"]::before { width: .55rem; height: .3rem; border-width: 0 0 2px 2px; border-radius: 0; transform: rotate(-45deg) translateY(-1px); }
+.google-meet-connect-card:has(.google-meet-connect-btn[data-state="connected"]) { border-color: color-mix(in srgb, var(--accent-green) 42%, var(--border)); background: var(--accent-green-bg); }
+#google-meet-status[data-state="connected"] { color: var(--accent-green); font-weight: 600; }
+
+@keyframes google-meet-spin { to { transform: rotate(360deg); } }
+
+/* ---------- Upload audio ---------- */
+.upload-zone {
+  display: flex; align-items: center; justify-content: center;
+  padding: .65rem; border-radius: .8rem; width: 100%;
+  border: 1px dashed var(--border); cursor: pointer;
+  transition: border-color .2s ease, background-color .2s ease;
+}
+.upload-zone:hover, .upload-zone:focus-visible {
+  border-color: var(--primary); color: var(--primary); outline: none;
+}
+.upload-zone.is-dragover {
+  border-color: var(--primary); background: var(--surface-2);
+}
+
+/* ---------- Mic / recording states ---------- */
+.state-badge {
+  display: inline-flex; align-items: center; gap: .4rem; font-size: 11px; font-weight: 700;
+  padding: .32rem .65rem; border-radius: 999px; text-transform: uppercase; letter-spacing: .035em;
+}
+.state-ready { background: var(--surface-2); color: var(--text-muted); }
+.state-listening { background: var(--accent-red-bg); color: var(--accent-red); }
+.state-processing { background: var(--accent-amber-bg); color: var(--accent-amber); }
+.state-completed { background: var(--accent-green-bg); color: var(--accent-green); }
+
+#mic-btn.is-listening { animation: mic-breathe 1.6s ease-in-out infinite; }
+@keyframes mic-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+#mic-pulse.is-active, #mic-pulse-2.is-active { animation: pulse-ring 2s ease-out infinite; }
+#mic-pulse-2.is-active { animation-delay: .5s; }
+@keyframes pulse-ring {
+  0% { transform: scale(.85); opacity: .55; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.wave-bar {
+  width: 3px; height: 6px; border-radius: 3px; background: var(--border);
+  transition: background-color .3s ease;
+}
+.wave-bar.is-active {
+  background: var(--primary);
+  animation: wave-bounce 1.1s ease-in-out infinite;
+  animation-delay: calc(var(--d) * 45ms);
+}
+@keyframes wave-bounce {
+  0%, 100% { height: 6px; }
+  50% { height: 34px; }
+}
+
+/* ---------- Transcript ---------- */
+.transcript-box {
+  height: 220px; overflow-y: auto; font-size: 13px; line-height: 1.65;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: .75rem;
+  padding: .75rem .9rem; display: flex; flex-direction: column; gap: .4rem;
+}
+.transcript-line {
+  padding: .35rem .5rem;
+  border-radius: .55rem;
+}
+.transcript-line:not(:empty) {
+  background: color-mix(in srgb, var(--surface) 72%, var(--primary-soft));
+  border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+}
+.transcript-speaker { font-weight: 700; margin-right: .3rem; }
+.transcript-cursor { animation: blink 1s step-start infinite; color: var(--primary); }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ---------- Suggestions ---------- */
+.suggestion-group summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between;
+  padding: .1rem 0;
+}
+.suggestion-group summary::-webkit-details-marker { display: none; }
+.suggestion-group[open] summary .chevron { transform: rotate(180deg); }
+.suggestion-group .chevron { transition: transform .2s ease; }
+.suggestion-group + .suggestion-group { border-top: 1px solid var(--border); padding-top: .75rem; }
+
+.alert-box {
+  display: flex; gap: .5rem; align-items: flex-start; font-size: 12px;
+  background: var(--accent-red-bg); color: var(--accent-red);
+  border: 1px solid color-mix(in srgb, var(--accent-red) 30%, transparent);
+  border-radius: .7rem; padding: .65rem .8rem;
+}
+.alert-box-ok { background: var(--accent-green-bg); color: var(--accent-green); border-color: color-mix(in srgb, var(--accent-green) 30%, transparent); }
+
+/* ---------- Confidence ---------- */
+.confidence-track { height: 6px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
+.confidence-fill { height: 100%; width: 0; border-radius: 999px; transition: width 1s cubic-bezier(.22,.9,.34,1); }
+.confidence-fill.confidence-high { background: var(--accent-green); }
+.confidence-fill.confidence-mid { background: var(--primary); }
+.confidence-fill.confidence-low { background: var(--accent-amber); }
+.confidence-fill.is-animated { width: var(--val); }
+.confidence-pct.confidence-high { color: var(--accent-green); }
+.confidence-pct.confidence-mid { color: var(--primary); }
+.confidence-pct.confidence-low { color: var(--accent-amber); }
+
+/* ---------- Token usage ---------- */
+.usage-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: .45rem .75rem;
+  align-items: baseline;
+  font-size: 12px;
+}
+.usage-grid span { color: var(--text-muted); }
+.usage-grid strong {
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* ---------- Mobile panel tabs ---------- */
+.panel-tab {
+  font-size: 12.5px; font-weight: 600; color: var(--text-muted);
+  padding: .5rem .9rem; border-radius: .55rem; cursor: pointer; transition: background-color .2s ease, color .2s ease;
+}
+.panel-tab.is-active { background: linear-gradient(135deg, var(--primary), var(--clinical-teal)); color: #fff; }
+
+@media (max-width: 1023px) {
+  .panel { display: none; }
+  .panel.is-active-mobile { display: block; }
+}
+
+/* ---------- Bottom action bar ---------- */
+.action-btn {
+  display: inline-flex; align-items: center; gap: .45rem; white-space: nowrap;
+  font-size: 13px; font-weight: 650; padding: .65rem 1rem; border-radius: .625rem;
+  cursor: pointer; transition: background-color .2s ease, color .2s ease, transform .15s ease;
+  min-height: 44px;
+}
+.action-btn:active { transform: scale(.97); }
+.action-btn-ghost { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); }
+.action-btn-ghost:hover { background: var(--border); }
+.action-btn-primary { background: linear-gradient(135deg, var(--primary), var(--clinical-teal)); color: #fff; }
+.action-btn-primary:hover { background: var(--primary-dark); }
+.action-btn-cta { background: var(--clinical-navy); color: #fff; }
+.action-btn-cta:hover { filter: brightness(1.08); }
+
+/* ---------- Toast ---------- */
+.toast {
+  position: fixed; bottom: 96px; left: 50%; transform: translateX(-50%) translateY(12px);
+  background: var(--text); color: var(--bg); font-size: 13px; font-weight: 600;
+  padding: .6rem 1.1rem; border-radius: .7rem; opacity: 0; pointer-events: none; z-index: 60;
+  transition: opacity .25s ease, transform .25s ease;
+}
+.toast.is-visible { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ---------- Clinical workspace refinements ---------- */
+table { border-collapse: separate; border-spacing: 0; }
+thead th { font-weight: 700; }
+tbody tr { transition: background-color .15s ease; }
+tbody tr:hover { background: color-mix(in srgb, var(--primary) 3%, transparent); }
+input[type="checkbox"], input[type="radio"] { accent-color: var(--primary); }
+
+@media (min-width: 1024px) {
+  .app-shell main { max-width: 1680px; }
+  .consultation-shell main { padding-top: 1.25rem; }
+}
+
+@media (max-width: 640px) {
+  .card { border-radius: .75rem; }
+  .app-shell main, .consultation-shell main { padding-left: 1rem; padding-right: 1rem; }
+  .action-btn { justify-content: center; }
+  .transcript-box { height: 190px; }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  #mic-btn.is-listening, #mic-pulse.is-active, #mic-pulse-2.is-active, .wave-bar.is-active,
+  .animate-ping, .transcript-cursor { animation: none !important; }
+}

@@ -1,0 +1,135 @@
+/* /assets/css/intake.css — AI outbound intake call screens (1b live monitor, 1c post-call
+   review) only. Loaded ONLY on /intake/call-monitor.php / /intake/call-review.php —
+   style.css itself is never touched, zero risk to every existing page. Reuses style.css's
+   theme custom properties (--primary, --accent-*, --surface, --border, --text-muted, ...). */
+
+/* ---------- Layout ---------- */
+.intake-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .intake-columns { grid-template-columns: 280px 1fr 300px; align-items: start; }
+}
+
+/* ---------- Live-monitor call state ---------- */
+.call-timer {
+  width: 9rem; height: 9rem; border-radius: 9999px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: var(--surface-2); border: 1px solid var(--border);
+  margin: 0 auto;
+}
+.call-timer .call-timer-value { font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.call-timer .call-timer-label { font-size: 11px; color: var(--text-muted); margin-top: .25rem; }
+
+.speaker-indicator { display: flex; align-items: center; justify-content: center; gap: .35rem; height: 1.5rem; }
+.speaker-indicator .bar {
+  width: 3px; height: 6px; border-radius: 2px; background: var(--border);
+  transition: height .15s ease, background-color .15s ease;
+}
+.speaker-indicator.is-agent .bar { background: var(--primary); animation: speaker-pulse 1s ease-in-out infinite; }
+.speaker-indicator.is-patient .bar { background: var(--accent-green); animation: speaker-pulse 1s ease-in-out infinite; }
+.speaker-indicator .bar:nth-child(2) { animation-delay: .1s; }
+.speaker-indicator .bar:nth-child(3) { animation-delay: .2s; }
+.speaker-indicator .bar:nth-child(4) { animation-delay: .3s; }
+@keyframes speaker-pulse { 0%, 100% { height: 6px; } 50% { height: 18px; } }
+
+/* ---------- Intervene panel ---------- */
+.intervene-panel { border: 1px solid var(--border); border-radius: .9rem; padding: 1rem; background: var(--surface); }
+.whisper-box {
+  width: 100%; min-height: 4.5rem; resize: vertical; font-size: 12.5px; line-height: 1.5;
+  background: var(--surface-2); border: 1px solid var(--border); border-radius: .6rem;
+  padding: .6rem .75rem; color: var(--text);
+}
+.whisper-box:focus { outline: none; border-color: var(--primary); }
+.whisper-preset {
+  font-size: 11.5px; padding: .35rem .7rem; border-radius: 999px;
+  background: var(--surface-2); border: 1px solid var(--border); color: var(--text);
+  cursor: pointer; transition: background-color .15s ease;
+}
+.whisper-preset:hover { background: var(--border); }
+
+/* ---------- Script progress stepper ---------- */
+.script-stepper { display: flex; flex-wrap: wrap; gap: .4rem; }
+.stepper-step {
+  font-size: 11px; padding: .3rem .6rem; border-radius: 999px;
+  background: var(--surface-2); color: var(--text-muted); border: 1px solid var(--border);
+  display: inline-flex; align-items: center; gap: .3rem;
+}
+.stepper-step.is-done { background: var(--accent-green-bg); color: var(--accent-green); border-color: transparent; }
+.stepper-step.is-active { background: var(--primary); color: #fff; border-color: transparent; font-weight: 600; }
+.stepper-step.is-upcoming { opacity: .6; }
+
+/* ---------- Red-flag banner ---------- */
+.redflag-banner {
+  display: flex; align-items: center; gap: .75rem; flex-wrap: wrap;
+  background: var(--accent-red-bg); border: 1px solid color-mix(in srgb, var(--accent-red) 40%, transparent);
+  border-radius: .9rem; padding: .85rem 1rem; color: var(--accent-red);
+}
+.redflag-banner .redflag-text { flex: 1; min-width: 200px; font-size: 13px; }
+.redflag-banner .redflag-text strong { font-weight: 700; }
+
+/* ---------- Transcript modifiers (base .transcript-box/.transcript-speaker/.transcript-cursor
+   already in style.css) ---------- */
+.transcript-line.is-redflag {
+  background: var(--accent-red-bg); border-radius: .5rem; padding: .3rem .5rem; margin: -.3rem -.5rem;
+}
+.section-tag {
+  display: inline-block; font-size: 10.5px; padding: .1rem .5rem; border-radius: 999px;
+  background: var(--surface-2); color: var(--text-muted); border: 1px solid var(--border);
+  margin-right: .3rem;
+}
+
+/* ---------- Tasks checklist ---------- */
+.task-checklist { display: flex; flex-direction: column; gap: .5rem; }
+.task-item {
+  display: flex; align-items: flex-start; gap: .5rem; font-size: 12.5px;
+  padding: .5rem .65rem; border-radius: .6rem; background: var(--surface-2); border: 1px solid var(--border);
+}
+.task-item input[type="checkbox"] { margin-top: .15rem; accent-color: var(--primary); cursor: pointer; }
+.task-item.is-done { opacity: .55; text-decoration: line-through; }
+.task-item .task-source { font-size: 10.5px; color: var(--text-muted); display: block; margin-top: .1rem; text-decoration: none; }
+
+/* ---------- Live/final usage ---------- */
+.usage-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: .45rem .75rem;
+  align-items: baseline;
+  font-size: 12px;
+}
+.usage-grid span { color: var(--text-muted); }
+.usage-grid strong {
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* ---------- Triage severity badge ---------- */
+.triage-badge {
+  display: inline-flex; align-items: center; gap: .4rem; padding: .5rem .8rem;
+  border-radius: .75rem; font-size: 13px; font-weight: 600;
+}
+.triage-badge.severity-routine { background: var(--surface-2); color: var(--text-muted); }
+.triage-badge.severity-low { background: var(--accent-green-bg); color: var(--accent-green); }
+.triage-badge.severity-medium { background: var(--accent-amber-bg); color: var(--accent-amber); }
+.triage-badge.severity-high, .triage-badge.severity-critical { background: var(--accent-red-bg); color: var(--accent-red); }
+
+/* ---------- Transcript-line scrubber (no real audio — see IntakeCallSession) ---------- */
+.scrubber-track { position: relative; height: 8px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); }
+.scrubber-marker {
+  position: absolute; top: -3px; width: 10px; height: 14px; border-radius: 3px;
+  background: var(--text-muted); cursor: pointer; transform: translateX(-50%);
+}
+.scrubber-marker.is-amber { background: var(--accent-amber); }
+.scrubber-marker.is-red { background: var(--accent-red); }
+
+/* ---------- Audit trail ---------- */
+.audit-trail-item {
+  font-size: 12px; padding: .4rem 0; border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+}
+.audit-trail-item:last-child { border-bottom: none; }
+.audit-trail-item .audit-time { font-variant-numeric: tabular-nums; margin-right: .4rem; color: var(--text); }
